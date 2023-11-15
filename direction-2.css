@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: Argaka;
+    src: url(fonts/ArgakaFashionRegular-K75Bo.ttf);
+}
+
+
+:root {
+    --main-font-family: Argaka;
+    --light-color: #FF48B0;
+    --dark-color: #FFEB00;
+    --accent-color: #5EC8E5;
+    --black-color: #1E1E1E;
+    --h1-font-size: 45px;
+    --h2-font-size: 30px;
+}
+
+p {
+    font-family: Archivo;
+}
+
+header {
+    color: var(--black-color);
+}
+
+h2 {
+    background-color: var(--dark-color);
+}

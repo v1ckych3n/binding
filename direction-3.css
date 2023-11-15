@@ -1,0 +1,24 @@
+@import url("https://use.typekit.net/job7sci.css");
+
+:root {
+    --main-font-family: "montserrat", sans-serif;
+    --body-font-family: "arimo", sans-serif;
+    --light-color: #D2D2D2;
+    --dark-color: #161616;
+    --accent-color: #DAFF48;
+
+    --h1-font-size: 45px;
+    --h2-font-size: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--accent-color);
+}
+
+p {
+    font-family: var(--body-font-family);
+}
