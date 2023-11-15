@@ -16,6 +16,8 @@ h2 {
     font-size: var(--h2-font-size);
     margin-top: 4rem;
     margin-bottom: 1rem;
+    margin-left: -5%;
+    margin-right: -5%;
 }
 
 p {
@@ -31,5 +33,27 @@ blockquote {
 }
 
 nav {
-    background-color: white;
+    background-color: var(--dark-color);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 1rem;
+    width: 100vw;
+    color: white;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+nav > ul > li:hover {
+    color: var(--accent-color);
+    transition: ease-in-out 0.3s;
+}
+
+
+body {
+    margin: 5%;
 }
