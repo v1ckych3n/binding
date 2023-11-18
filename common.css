@@ -33,7 +33,7 @@
     --main-font: Monaspace Neon;
     --heading-font: Cabinet Grotesk-SemiBold;
     --navbar-font: Cabinet Grotesk-SemiBold;
-    --navbar-font-size: 2rem;
+    --navbar-font-size: 3.5rem;
 
     /* h1 styles */
     --h1-font-size: 4rem;
@@ -77,18 +77,31 @@ p {
 
 /* Semantic DOM styles */
 nav {
-    background-color: var(--light-color);
     color: var(--dark-color);
     font-family: var(--navbar-font);
     font-weight: 600;
     text-transform: uppercase;
     font-size: var(--navbar-font-size);
 
-    margin-left: -3%;
-    margin-right: -3%;
+    min-width: 100%;
+}
+
+nav > ul {
+    /* transform: rotate(-90deg); */
 }
 
 nav > ul > li {
     border: black 1px solid;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    background-color: var(--light-color);
+}
+
+/* class styles */
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
