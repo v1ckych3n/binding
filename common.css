@@ -33,7 +33,7 @@
     --main-font: Monaspace Neon;
     --heading-font: Cabinet Grotesk-SemiBold;
     --navbar-font: Cabinet Grotesk-SemiBold;
-    --navbar-font-size: 3.5rem;
+    --navbar-font-size: 7rem;
 
     /* h1 styles */
     --h1-font-size: 4rem;
@@ -86,23 +86,14 @@ p {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: -3%;
     margin-right: -3%;
 }
 
-nav > ul {
-    height: 100%;
-    width: 100%;
-}
-
 nav > ul > li {
     border: black 1px solid;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
     background-color: var(--light-color);
@@ -112,6 +103,6 @@ nav > ul > li {
 /* class styles */
 .landing-page_container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
 }
