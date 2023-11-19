@@ -76,7 +76,7 @@ p {
 }
 
 /* Semantic DOM styles */
-nav {
+.vertical-navbar {
     color: var(--dark-color);
     font-family: var(--navbar-font);
     font-weight: 600;
@@ -90,6 +90,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -3%;
+    margin-right: -3%;
+}
+
+nav > ul {
     height: 100%;
     width: 100%;
 }
