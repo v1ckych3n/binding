@@ -72,7 +72,7 @@ p {
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
 
-    width: 75vw;
+    /* width: 75vw; */
 }
 
 /* Semantic DOM styles */
@@ -83,11 +83,15 @@ nav {
     text-transform: uppercase;
     font-size: var(--navbar-font-size);
 
-    min-width: 100%;
-}
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
 
-nav > ul {
-    /* transform: rotate(-90deg); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 nav > ul > li {
@@ -99,9 +103,10 @@ nav > ul > li {
     background-color: var(--light-color);
 }
 
+
 /* class styles */
-.landing-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.landing-page_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
 }
