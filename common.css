@@ -126,8 +126,8 @@ nav > ul > li > a > span:nth-of-type(2) {
 
 /* class styles */
 
-.landing-page_container > header {
-    margin: 3%;
+.landing-page_container header {
+    padding-top: 15rem;
 }
 
 .special-background-character {
