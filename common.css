@@ -33,7 +33,7 @@
     --main-font: Monaspace Neon;
     --heading-font: Cabinet Grotesk-SemiBold;
     --navbar-font: Cabinet Grotesk-SemiBold;
-    --navbar-font-size: 7rem;
+    --navbar-font-size: 3.5rem;
 
     /* h1 styles */
     --h1-font-size: 4rem;
@@ -44,14 +44,8 @@
     /* paragraph styles */
     --p-font-size: .75rem;
     --p-line-height: 140%;
+    --p-margin-bottom: 1.5rem;
 }
-
-/* html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-} */
 
 body {
     background-color: var(--dark-color);
@@ -78,12 +72,13 @@ p {
     font-family: var(--main-font);
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
+    margin-bottom: var(--p-margin-bottom);
 
     /* width: 75vw; */
 }
 
 /* Semantic DOM styles */
-.vertical-navbar {
+nav {
     color: var(--dark-color);
     font-family: var(--navbar-font);
     font-weight: 600;
@@ -92,23 +87,75 @@ p {
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
 }
 
 nav > ul > li {
     border: black 1px solid;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    width: auto;
+    height: 10vh;
     background-color: var(--light-color);
 }
 
+nav > ul > li > a > span:first-of-type {
+    writing-mode: horizontal-tb;
+    transform: rotate(-180deg);
+}
+
+nav > ul > li > a > span:nth-of-type(2) {
+    display: none;
+}
 
 /* class styles */
-.landing-page_container {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    column-gap: 2rem;
-    height: 100%;
-    margin: -3%;
+
+.landing-page_container > header {
+    margin: 3%;
+}
+
+@media (min-width: 1280px) {
+    :root {
+        --h1-font-size: 10rem;
+        --p-font-size: 1.25rem;
+        --p-margin-bottom: 2rem;
+
+        --navbar-font-size: 7rem;
+    }
+
+    .landing-page_container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 2rem;
+        height: 100%;
+        margin: -3%;
+    }
+
+    .landing-page_container > header {
+        margin: 5%;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+    }
+
+    nav > ul > li {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        height: 100vh;
+    }
+
+    nav > ul > li > a > span:nth-of-type(2) {
+        display: inline;
+    }
 }
