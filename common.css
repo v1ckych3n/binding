@@ -92,10 +92,6 @@ p {
 
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-
-    margin-top: -6%;
-    margin-right: -6%;
-    margin-left: 6%;
 }
 
 nav > ul > li {
@@ -111,6 +107,8 @@ nav > ul > li {
 /* class styles */
 .landing-page_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 2rem;
+    height: 100%;
+    margin: -3%;
 }
