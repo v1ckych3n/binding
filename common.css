@@ -45,6 +45,7 @@
 
     /* h1 styles */
     --h1-font-size: 4rem;
+    --h1-line-height: 100%;
 
     /* h2 styles */
     --h2-font-size: 2rem;
@@ -68,6 +69,7 @@ h1 {
     color: var(--accent-color);
     font-size: var(--h1-font-size);
     text-transform: uppercase;
+    line-height: var(--h1-line-height);
 }
 
 h2 {
@@ -134,7 +136,7 @@ nav > ul > li > a > span:nth-of-type(2) {
     font-family: var(--special-background-character_font-family);
     font-size: var(--special-background-character_font-size);
 
-    position: absolute;
+    position: fixed;
     top: -50rem;
     z-index: 2;
     color: transparent;
@@ -145,7 +147,7 @@ nav > ul > li > a > span:nth-of-type(2) {
 
 @media (min-width: 1280px) {
     :root {
-        --h1-font-size: 9rem;
+        --h1-font-size: 7rem;
         --p-font-size: 1.25rem;
         --p-margin-bottom: 2rem;
 
@@ -175,8 +177,8 @@ nav > ul > li > a > span:nth-of-type(2) {
     nav > ul > li {
         padding-top: 2rem;
         padding-bottom: 2rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
         height: 100vh;
     }
 
