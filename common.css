@@ -60,7 +60,7 @@ body {
     color: var(--light-color);
 
     margin: 3%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1 {
@@ -97,7 +97,7 @@ nav {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
@@ -145,11 +145,11 @@ nav > ul > li > a > span:nth-of-type(2) {
 
 @media (min-width: 1280px) {
     :root {
-        --h1-font-size: 10rem;
+        --h1-font-size: 9rem;
         --p-font-size: 1.25rem;
         --p-margin-bottom: 2rem;
 
-        --navbar-font-size: 7rem;
+        --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
     }
 
@@ -166,8 +166,10 @@ nav > ul > li > a > span:nth-of-type(2) {
     }
 
     nav {
-        position: static;
+        position: sticky;
+        top: 0;
         width: 100%;
+        height: 100vh;
     }
 
     nav > ul > li {
