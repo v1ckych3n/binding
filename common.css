@@ -213,12 +213,5 @@ main {
         grid-template-columns: 1.5fr 1fr;
         column-gap: 2rem;
         height: 100vh;
-        margin-top: -3%;
-        margin-right: -3%;
-        margin-left: -3%;
-    }
-
-    .landing-page_container > header {
-        margin: 5%;
     }
 }
