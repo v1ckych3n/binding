@@ -162,10 +162,6 @@ main {
     width: 100vw;
 }
 
-.landing-page_container header {
-    padding-top: 15rem;
-}
-
 .special-background-character {
     font-family: var(--special-background-character_font-family);
     font-size: var(--special-background-character_font-size);
@@ -243,6 +239,22 @@ main {
 
     .landing-page_container > header {
         margin: 5%;
+    }    
+
+    .header_author {
+        font-size: 1.5rem;
+        border: white 1.5px solid;
+        border-radius: 100rem;
+
+        margin: 0;
+        text-transform: uppercase;
+
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        position: inline;
     }
 
     .header_subtext {
