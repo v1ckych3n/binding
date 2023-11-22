@@ -265,9 +265,10 @@ main {
         --h2-font-size: 5rem;
         --h2-line-height: 90%;
 
-        --p-font-size: 1.25rem;
+        --p-font-size: 1.15rem;
         --p-margin-top: 3rem;
         --p-margin-bottom: 3rem;
+        --p-line-height: 155%;
 
         --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
