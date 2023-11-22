@@ -75,6 +75,7 @@
 
     /* other styles */
     --border-style: black 1px solid;
+    --container-margin-top: 2rem;
 }
 
 body {
@@ -260,6 +261,7 @@ main {
 
         /* other styles */
         --border-style: black 1.5px solid;
+        --container-margin-top: 6rem;
     }
 
     p {
@@ -406,6 +408,8 @@ main {
     .container_style-one {
         position: relative;
 
+        margin-top: var(--container-margin-top);
+
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -429,7 +433,6 @@ main {
         background-color: var(--gray-color);
         width: 60vw;
         position: relative;
-
         border-top: var(--border-style);
         border-bottom: var(--border-style);
     }
