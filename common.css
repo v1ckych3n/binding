@@ -118,16 +118,6 @@ blockquote {
     width: 90vw;
 }
 
-/* ul, li {
-    font-family: var(--main-font);
-    font-size: var(--ul-font-size);
-    line-height: var(--ul-line-height);
-    margin: auto;
-    margin-top: var(--ul-margin-top);
-    margin-bottom: var(--ul-margin-bottom);
-    width: 90vw;
-} */
-
 mark {
     background-color: var(--accent-color);
 }
@@ -162,6 +152,8 @@ nav > ul > li {
     background-color: var(--light-color);
 }
 
+/* Reminder: add a hover effect to the navbar link */
+
 nav > ul > li > a > span:first-of-type {
     writing-mode: horizontal-tb;
     transform: rotate(-180deg);
@@ -176,8 +168,18 @@ main {
     color: var(--dark-color);
     
     border-top: var(--border-style);
-    border-bottom; var(--border-style);
+    border-bottom: var(--border-style);
 }
+
+/* ul, li {
+    font-family: var(--main-font);
+    font-size: var(--ul-font-size);
+    line-height: var(--ul-line-height);
+    margin: auto;
+    margin-top: var(--ul-margin-top);
+    margin-bottom: var(--ul-margin-bottom);
+    width: 90vw;
+} */
 
 /* class styles */
 .landing-page_container {
