@@ -178,6 +178,7 @@ main {
 @media (min-width: 1280px) {
     :root {
         --h1-font-size: 7rem;
+        --h1-line-height: 90%;
         --p-font-size: 1.25rem;
         --p-margin-top: 3rem;
         --p-margin-bottom: 3rem;
@@ -265,8 +266,27 @@ main {
         margin-right: -5%;
 
         position: relative;
-        top: 15rem;
+        top: 17rem;
         left: 5rem;
         border: var(--border-style);
     }
+
+    .header_subtext-top-2 {
+        position: relative;
+        top: 5rem;
+        left: 5rem;
+        border: var(--border-style);
+    }
+
+    .header_subtext-top-3 {
+        position: relative;
+        top: 0rem;
+        left: 5rem;
+        border: var(--border-style);
+    }
+
+    /* .blockquote_container {
+        background: var(--gray-color);
+        border: var(--border-style);
+    } */
 }
