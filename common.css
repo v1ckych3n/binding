@@ -243,18 +243,17 @@ main {
 
     .header_author {
         font-size: 1.5rem;
-        border: white 1.5px solid;
-        border-radius: 100rem;
-
-        margin: 0;
         text-transform: uppercase;
 
-        padding-top: .25rem;
-        padding-bottom: .25rem;
+        margin: -5%;
+
+        position: inline-block;
+        border: white 1.5px solid;
+        border-radius: 10rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
         padding-left: 1rem;
         padding-right: 1rem;
-
-        position: inline;
     }
 
     .header_subtext {
@@ -266,7 +265,7 @@ main {
         margin-right: -5%;
 
         position: relative;
-        top: 5rem;
+        top: 15rem;
         left: 5rem;
         border: var(--border-style);
     }
