@@ -6,6 +6,12 @@
 }
 
 @font-face {
+    font-family: Cabinet Grotesk-Medium;
+    src: url(fonts/CabinetGrotesk-Variable.ttf);
+    font-weight: 400;
+}
+
+@font-face {
     font-family: Cabinet Grotesk-SemiBold;
     src: url(fonts/CabinetGrotesk-Variable.ttf);
     font-weight: 500;
@@ -37,7 +43,7 @@
     /* font styles */
     --main-font: Monaspace Neon;
     --heading-font: Cabinet Grotesk-SemiBold;
-    --navbar-font: Cabinet Grotesk-SemiBold;
+    --blockquote-font: Cabinet Grotesk-Medium;
     --navbar-font-size: 3.5rem;
 
     --special-background-character_font-family: Chomsky;
@@ -92,14 +98,14 @@ p {
 }
 
 blockquote {
-    font-family: var(--heading-font);
+    font-family: var(--blockquote-font);
     font-size: var(--blockquote-font-size);
 }
 
 /* Semantic DOM styles */
 nav {
     color: var(--dark-color);
-    font-family: var(--navbar-font);
+    font-family: var(--heading-font);
     font-weight: 600;
     text-transform: uppercase;
     font-size: var(--navbar-font-size);
