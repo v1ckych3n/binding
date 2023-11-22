@@ -44,7 +44,7 @@
     /* font styles */
     --main-font: Monaspace Neon;
     --heading-font: Cabinet Grotesk-SemiBold;
-    --blockquote-font: Cabinet Grotesk-Medium;
+    --blockquote-font: Cabinet Grotesk-SemiBold;
     --navbar-font-size: 3.5rem;
 
     --special-background-character_font-family: Chomsky;
@@ -285,8 +285,12 @@ main {
         border: var(--border-style);
     }
 
-    /* .blockquote_container {
-        background: var(--gray-color);
-        border: var(--border-style);
-    } */
+    .container_style-one {
+        display: flex;
+        
+    }
+
+    .container_style-one > header {
+
+    }
 }
