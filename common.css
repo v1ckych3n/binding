@@ -56,6 +56,7 @@
 
     /* h2 styles */
     --h2-font-size: 2rem;
+    --h2-line-height: 100%;
 
     /* paragraph styles */
     --p-font-size: 1rem;
@@ -64,7 +65,13 @@
     --p-margin-bottom: 1.5rem;
 
     /* blockquote styles */
-    --blockquote-font-size: 2rem;
+    --blockquote-font-size: 1.5rem;
+
+    /* list styles */
+    --ul-font-size: 1rem;
+    --ul-line-height: 100%;
+    --ul-margin-top: 1.5rem;
+    --p-margin-bottom: 1.5rem;
 
     /* other styles */
     --border-style: black 1px solid;
@@ -88,6 +95,7 @@ h2 {
     text-transform: uppercase;
     color: var(--dark-color);
     font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
 }
 
 p {
@@ -108,6 +116,20 @@ blockquote {
     font-size: var(--blockquote-font-size);
     margin: auto;
     width: 90vw;
+}
+
+/* ul, li {
+    font-family: var(--main-font);
+    font-size: var(--ul-font-size);
+    line-height: var(--ul-line-height);
+    margin: auto;
+    margin-top: var(--ul-margin-top);
+    margin-bottom: var(--ul-margin-bottom);
+    width: 90vw;
+} */
+
+mark {
+    background-color: var(--accent-color);
 }
 
 /* Semantic DOM styles */
@@ -153,7 +175,8 @@ main {
     background-color: var(--light-color);
     color: var(--dark-color);
     
-    border: var(--border-style);
+    border-top: var(--border-style);
+    border-bottom; var(--border-style);
 }
 
 /* class styles */
@@ -175,16 +198,63 @@ main {
     -webkit-text-stroke-width: 1px;
 }
 
+.red-pen-mark {
+    position: relative;
+}
+
+.red-pen-mark:before {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+
+    width: 120%;
+    height: 120%;
+    left: -0.5rem;
+    top: -0.1rem;
+    padding: 0.1rem 0.25rem;
+    border: red 2px solid;
+
+    transform: rotate(2deg);
+    border-radius: 100%;
+}
+
+.red-pen-mark:after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+
+    width: 120%;
+    height: 120%;
+    left: -0.5rem;
+    top: -0.1rem;
+    padding: 0.1rem 0.25rem;
+    border: red 2px solid;
+
+    border-left-color: transparent;
+    border-top-color: transparent;
+    
+    transform: rotate(-1deg);
+    border-radius: 100%;
+}
+
+
 @media (min-width: 1280px) {
     :root {
         --h1-font-size: 7rem;
         --h1-line-height: 90%;
+
+        --h2-font-size: 5rem;
+        --h2-line-height: 90%;
+
         --p-font-size: 1.25rem;
         --p-margin-top: 3rem;
         --p-margin-bottom: 3rem;
 
         --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
+
+        --ul-font-size: 1.25rem;
+        --blockquote-font-size: 2rem;
 
         /* other styles */
         --border-style: black 1.5px solid;
@@ -201,6 +271,11 @@ main {
         width: 40vw;
         margin: auto;
     }
+
+    /* ul {
+        margin: auto;
+        width: 40vw;
+    } */
 
     /* Semantic DOM styles */
     nav {
@@ -285,12 +360,89 @@ main {
         border: var(--border-style);
     }
 
-    .container_style-one {
-        display: flex;
+    .navbar_red-pen-mark {
+        position: relative;
+    }
+    
+    .navbar_red-pen-mark:before {
+        content: "";
+        position: absolute;
+        top: -4rem;
+        z-index: 1000;
+    
+        width: 120%;
+        height: 110%;
+        left: -0.5rem;
+        /* top: -0.1rem; */
+        padding: 0.1rem 0.25rem;
+        border: red 5px solid;
+    
+        transform: rotate(2deg);
+        border-radius: 100%;
+    }
+    
+    .navbar_red-pen-mark:after {
+        content: "";
+        position: absolute;
+        z-index: 1000;
+        top: -4rem;
+    
+        width: 120%;
+        height: 110%;
+        left: -0.5rem;
+        /* top: -0.1rem; */
+        padding: 0.1rem 0.25rem;
+        border: red 5px solid;
+    
+        border-left-color: transparent;
+        border-top-color: transparent;
         
+        transform: rotate(-1deg);
+        border-radius: 100%;
+    }
+
+    .container_style-one {
+        position: relative;
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
     }
 
     .container_style-one > header {
+        position: sticky;
+        top: 0;
 
+        background: var(--accent-color);
+        width: 40vw;
+        padding: 3%;
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+        padding: 3%;
+        border: var(--border-style);
     }
+
+    .container_style-one > section {
+        background-color: var(--gray-color);
+        width: 60vw;
+        position: relative;
+
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+    }
+
+    .container_style-two {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .container_style-two > header {
+        padding: 3%;
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+    }
+
 }
