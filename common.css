@@ -39,6 +39,7 @@
     --light-color: white;
     --dark-color: black;
     --accent-color: #DAFF48;
+    --gray-color: #F0EFEE;
 
     /* font styles */
     --main-font: Monaspace Neon;
@@ -59,13 +60,14 @@
     /* paragraph styles */
     --p-font-size: 1rem;
     --p-line-height: 140%;
+    --p-margin-top: 1.5rem;
     --p-margin-bottom: 1.5rem;
 
     /* blockquote styles */
     --blockquote-font-size: 2rem;
 
     /* other styles */
-    --border-style: black 1.5px solid;
+    --border-style: black 1px solid;
 }
 
 body {
@@ -84,7 +86,7 @@ h1 {
 h2 {
     font-family: var(--heading-font);
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: var(--dark-color);
     font-size: var(--h2-font-size);
 }
 
@@ -97,9 +99,15 @@ p {
     width: 90vw;
 }
 
+em {
+    font-style: italic;
+}
+
 blockquote {
     font-family: var(--blockquote-font);
     font-size: var(--blockquote-font-size);
+    margin: auto;
+    width: 90vw;
 }
 
 /* Semantic DOM styles */
@@ -113,13 +121,14 @@ nav {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 
-    position: sticky;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    /* margin-bottom: -3%; */
+
+    width: 100vw;
 }
 
 nav > ul > li {
@@ -148,6 +157,10 @@ main {
 }
 
 /* class styles */
+.landing-page_container {
+    height: 100vh;
+    width: 100vw;
+}
 
 .landing-page_container header {
     padding-top: 15rem;
@@ -161,7 +174,7 @@ main {
     top: -40rem;
     z-index: -1;
     color: transparent;
-    opacity: 35%;
+    opacity: 25%;
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px;
 }
@@ -170,14 +183,29 @@ main {
     :root {
         --h1-font-size: 7rem;
         --p-font-size: 1.25rem;
+        --p-margin-top: 3rem;
         --p-margin-bottom: 3rem;
 
         --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
+
+        /* other styles */
+        --border-style: black 1.5px solid;
+    }
+
+    p {
+        margin: auto;
+        margin-top: var(--p-margin-top);
+        margin-bottom: var(--p-margin-bottom);
+        width: 40vw;
+    }
+
+    blockquote {
+        width: 40vw;
+        margin: auto;
     }
 
     /* Semantic DOM styles */
-
     nav {
         position: sticky;
         top: 0;
@@ -201,10 +229,8 @@ main {
         display: inline;
     }
 
-    p {
-        margin: auto;
-        margin-bottom: var(--p-margin-bottom);
-        width: 40vw;
+    main {
+        padding-top: 10rem;
     }
 
     /* class styles */
@@ -213,5 +239,23 @@ main {
         grid-template-columns: 1.5fr 1fr;
         column-gap: 2rem;
         height: 100vh;
+    }
+
+    .landing-page_container > header {
+        margin: 5%;
+    }
+
+    .header_subtext {
+        background: var(--gray-color);
+        color: var(--dark-color);
+
+        padding: 3rem;
+        margin-left: -5%;
+        margin-right: -5%;
+
+        position: relative;
+        top: 5rem;
+        left: 5rem;
+        border: var(--border-style);
     }
 }
