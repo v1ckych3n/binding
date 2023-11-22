@@ -425,8 +425,8 @@ main {
         padding: 3%;
         border-top: var(--border-style);
         border-bottom: var(--border-style);
+        border-right: var(--border-style);
         padding: 3%;
-        border: var(--border-style);
     }
 
     .container_style-one > section {
@@ -446,7 +446,6 @@ main {
 
     .container_style-two > header {
         padding: 3%;
-        border-top: var(--border-style);
         border-bottom: var(--border-style);
     }
 
