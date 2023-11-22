@@ -333,8 +333,9 @@ main {
         padding-left: 1.5rem;
         height: 100vh;
 
-        justify-content: flex-end;
-        align-content: flex-end;
+        display: flex;
+        align-items: stretch;
+        justify-content:last baseline;
     }
 
     nav > ul > li > a > span:nth-of-type(2) {
