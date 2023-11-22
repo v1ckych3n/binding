@@ -30,6 +30,12 @@
 }
 
 @font-face {
+    font-family: Monaspace Neon-Bold;
+    src: url(fonts/MonaspaceNeonVarVF[wght\,wdth\,slnt].ttf);
+    font-weight: 600;
+}
+
+@font-face {
     font-family: Chomsky;
     src: url(fonts/Chomsky.otf);
 }
@@ -66,6 +72,7 @@
 
     /* blockquote styles */
     --blockquote-font-size: 1.5rem;
+    --blockquote-line-height: 140%;
 
     /* list styles */
     --ul-font-size: 1rem;
@@ -76,6 +83,10 @@
     /* other styles */
     --border-style: black 1px solid;
     --container-margin-top: 2rem;
+    --container-margin-bottom: 2rem;
+
+    --section-margin-top: 3rem;
+    --section-margin-bottom: 3rem;
 }
 
 body {
@@ -97,6 +108,7 @@ h2 {
     color: var(--dark-color);
     font-size: var(--h2-font-size);
     line-height: var(--h2-line-height);
+    padding: 3%;
 }
 
 p {
@@ -112,9 +124,14 @@ em {
     font-style: italic;
 }
 
+strong {
+    font-family: Monaspace Neon-Bold;
+}
+
 blockquote {
     font-family: var(--blockquote-font);
     font-size: var(--blockquote-font-size);
+    line-height: var(--blockquote-line-height);
     margin: auto;
     width: 90vw;
 }
@@ -172,16 +189,6 @@ main {
     border-bottom: var(--border-style);
 }
 
-/* ul, li {
-    font-family: var(--main-font);
-    font-size: var(--ul-font-size);
-    line-height: var(--ul-line-height);
-    margin: auto;
-    margin-top: var(--ul-margin-top);
-    margin-bottom: var(--ul-margin-bottom);
-    width: 90vw;
-} */
-
 /* class styles */
 .landing-page_container {
     height: 100vh;
@@ -210,9 +217,9 @@ main {
     position: absolute;
     z-index: 1000;
 
-    width: 120%;
-    height: 120%;
-    left: -0.5rem;
+    width: 150%;
+    height: 130%;
+    left: -1.5rem;
     top: -0.1rem;
     padding: 0.1rem 0.25rem;
     border: red 2px solid;
@@ -226,9 +233,9 @@ main {
     position: absolute;
     z-index: 1000;
 
-    width: 120%;
-    height: 120%;
-    left: -0.5rem;
+    width: 150%;
+    height: 130%;
+    left: -1.5rem;
     top: -0.1rem;
     padding: 0.1rem 0.25rem;
     border: red 2px solid;
@@ -240,6 +247,15 @@ main {
     border-radius: 100%;
 }
 
+.ul-li_normal {
+    font-family: var(--main-font);
+    font-size: var(--ul-font-size);
+    line-height: var(--ul-line-height);
+    margin: auto;
+    margin-top: var(--ul-margin-top);
+    margin-bottom: var(--ul-margin-bottom);
+    width: 90vw;
+}
 
 @media (min-width: 1280px) {
     :root {
@@ -262,6 +278,10 @@ main {
         /* other styles */
         --border-style: black 1.5px solid;
         --container-margin-top: 6rem;
+        --container-margin-bottom: 3rem;
+
+        --section-margin-top: 5rem;
+        --section-margin-bottom: 5rem;
     }
 
     p {
@@ -445,8 +465,40 @@ main {
     }
 
     .container_style-two > header {
-        padding: 3%;
+        /* padding: 3%; --> added to the main h2*/ 
         border-bottom: var(--border-style);
+        margin-bottom: var(--container-margin-bottom);
+    }
+
+    .circle-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        margin-top: var(--section-margin-top);
+        margin-bottom: var(--section-margin-bottom);
+
+        text-transform: uppercase;
+        font-size:x-large;
+    }
+
+    .circle-container > li {
+        border-radius: 100%;
+        position: relative;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* margin-right: 1rem; */
+
+        border: var(--border-style);
+        width: 300px;
+        height: 300px;
+        background-color: var(--dark-color);
+        color: var(--light-color);
     }
 
 }
