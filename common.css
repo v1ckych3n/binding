@@ -51,9 +51,12 @@
     --h2-font-size: 2rem;
 
     /* paragraph styles */
-    --p-font-size: .75rem;
+    --p-font-size: 1rem;
     --p-line-height: 140%;
     --p-margin-bottom: 1.5rem;
+
+    /* blockquote styles */
+    --blockquote-font-size: 2rem;
 }
 
 body {
@@ -83,9 +86,14 @@ p {
     font-family: var(--main-font);
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
+    margin: auto;
     margin-bottom: var(--p-margin-bottom);
+    width: 90vw;
+}
 
-    /* width: 75vw; */
+blockquote {
+    font-family: var(--heading-font);
+    font-size: var(--blockquote-font-size);
 }
 
 /* Semantic DOM styles */
@@ -99,21 +107,19 @@ nav {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 
-    position: sticky;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100vw;
+    z-index: 10;
 }
 
 nav > ul > li {
     border: black 1px solid;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-right: .75rem;
-    padding-left: .75rem;
-    width: auto;
+
+    padding: auto;
+    width: 100%;
     height: 10vh;
     background-color: var(--light-color);
 }
@@ -150,7 +156,7 @@ nav > ul > li > a > span:nth-of-type(2) {
     :root {
         --h1-font-size: 7rem;
         --p-font-size: 1.25rem;
-        --p-margin-bottom: 2rem;
+        --p-margin-bottom: 3rem;
 
         --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
@@ -161,6 +167,9 @@ nav > ul > li > a > span:nth-of-type(2) {
     nav {
         position: sticky;
         top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
         width: 100%;
         height: 100vh;
         z-index: 2;
@@ -180,6 +189,7 @@ nav > ul > li > a > span:nth-of-type(2) {
 
     p {
         margin: auto;
+        margin-bottom: var(--p-margin-bottom);
         width: 40vw;
     }
 
