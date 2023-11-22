@@ -63,14 +63,14 @@
 
     /* blockquote styles */
     --blockquote-font-size: 2rem;
+
+    /* other styles */
+    --border-style: black 1.5px solid;
 }
 
 body {
     background-color: var(--dark-color);
     color: var(--light-color);
-
-    margin: 3%;
-    /* overflow: hidden; */
 }
 
 h1 {
@@ -113,16 +113,17 @@ nav {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 
-    position: fixed;
+    position: sticky;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 10;
+    /* margin-bottom: -3%; */
 }
 
 nav > ul > li {
-    border: black 1px solid;
+    border: var(--border-style);
 
     padding: auto;
     width: 100%;
@@ -137,6 +138,13 @@ nav > ul > li > a > span:first-of-type {
 
 nav > ul > li > a > span:nth-of-type(2) {
     display: none;
+}
+
+main {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    
+    border: var(--border-style);
 }
 
 /* class styles */
