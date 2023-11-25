@@ -46,6 +46,7 @@
     --dark-color: black;
     --accent-color: #DAFF48;
     --post-it-color: #fdfdbf;
+    --highlighter-color: #FFBCD9;
 
     /* font styles */
     --main-font: Monaspace Neon;
@@ -141,7 +142,7 @@ blockquote {
 }
 
 mark {
-    background-color: var(--accent-color);
+    background-color: var(--highlighter-color);
 }
 
 /* Semantic DOM styles */
@@ -352,6 +353,8 @@ main {
         grid-template-columns: 1.5fr 1fr;
         column-gap: 2rem;
         height: 100vh;
+
+        position: relative;
     }
 
     .landing-page_container > header {
@@ -512,25 +515,7 @@ main {
         position: sticky;
         top: 0;
         z-index: 10;
-
-        /* shrinking when scroll */
-        transition: transform 0.3s ease-out;
-        transition-property: all;
     }
-
-    @keyframes shrinkOnScroll {
-        from {
-            transform: scale(1);
-        }
-
-        to {
-            transform: scale(0.5);
-        }
-    }
-
-    .circle-container.scrolling {
-        animation: shrinkOnScroll is forwards;
-    } 
 
     .circle-container > li {
         border-radius: 100%;
@@ -547,6 +532,25 @@ main {
         height: 300px;
         background-color: var(--dark-color);
         color: var(--light-color);
+
+        /* shrinking when scroll */
+        /* transition: transform 0.3s ease-out;
+        transition-property: all; */
     }
+
+    /* <-- testing CSS animation for when scrolling -->
+    /* @keyframes shrinkOnScroll {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(0.5);
+        }
+    }
+
+    .circle-container:scrolling > li {
+        animation: shrinkOnScroll is forwards;
+    }  */
 
 }
