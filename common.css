@@ -354,12 +354,12 @@ main {
         grid-template-columns: 1.5fr 1fr;
         column-gap: 2rem;
         height: 100vh;
-
-        position: relative;
     }
 
     .landing-page_container > header {
         margin: 5%;
+
+        position: relative;
     }    
 
     .header_author {
