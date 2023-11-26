@@ -366,7 +366,7 @@ main {
         font-size: 1.5rem;
         text-transform: uppercase;
 
-        margin: -5%;
+        /* margin: -5%; */
 
         position: inline-block;
         border: white 1.5px solid;
@@ -533,25 +533,5 @@ main {
         height: 300px;
         background-color: var(--dark-color);
         color: var(--light-color);
-
-        /* shrinking when scroll */
-        /* transition: transform 0.3s ease-out;
-        transition-property: all; */
     }
-
-    /* <-- testing CSS animation for when scrolling -->
-    /* @keyframes shrinkOnScroll {
-        from {
-            transform: scale(1);
-        }
-
-        to {
-            transform: scale(0.5);
-        }
-    }
-
-    .circle-container:scrolling > li {
-        animation: shrinkOnScroll is forwards;
-    }  */
-
 }
