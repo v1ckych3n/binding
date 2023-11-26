@@ -66,6 +66,10 @@
     --h2-font-size: 2rem;
     --h2-line-height: 100%;
 
+    /* h3 styles */
+    --h3-font-size: 1.5rem;
+    --h3-line-height: 100%;
+
     /* paragraph styles */
     --p-font-size: 1rem;
     --p-line-height: 140%;
@@ -115,6 +119,14 @@ h2 {
     font-size: var(--h2-font-size);
     line-height: var(--h2-line-height);
     padding: 3%;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+    margin-left: 5%;
+    text-transform: uppercase;
 }
 
 p {
@@ -289,6 +301,9 @@ li {
 
         --h2-font-size: 5rem;
         --h2-line-height: 90%;
+
+        --h3-font-size: 3rem;
+        --h3-line-height: 100%;
 
         --p-font-size: 1rem;
         --p-margin-top: 3rem;
@@ -492,7 +507,7 @@ li {
     }
 
     .container_style-one > section {
-        background-color: var(--gray-color);
+        background-color: var(--light-color);
         width: 60vw;
         position: relative;
         border-top: var(--border-style);
@@ -584,6 +599,10 @@ li {
         color: var(--light-color);
     }
 
+    .container_style-three-navbar {
+        color: var(--light-color);
+    }
+
     .container_style-three > section {
         background-color: var(--light-color);
         width: 60vw;
@@ -606,5 +625,42 @@ li {
 
     li {
         margin-bottom: 1.5rem;
+    }
+
+    .container_style-four {
+        position: relative;
+        top: 0;
+
+        margin-top: var(--container-margin-top);
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+    }
+
+    .container_style-four > header {
+        background: var(--gray-color);
+        width: 40vw;
+        padding: 3%;
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+        border-right: var(--border-style);
+        padding: 3%;
+    }
+
+    .container_style-four > header > h2 {
+        position: sticky;
+        top: 10px;
+
+        color: var(--dark-color);
+    }
+
+    .container_style-four > section {
+        background-color: var(--light-color);
+        width: 60vw;
+        position: relative;
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
     }
 }
