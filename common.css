@@ -69,6 +69,8 @@
     /* h3 styles */
     --h3-font-size: 1.5rem;
     --h3-line-height: 100%;
+    --h3-margin-top: 2rem;
+    --h3-margin-bottom: 2rem;
 
     /* paragraph styles */
     --p-font-size: 1rem;
@@ -79,12 +81,14 @@
     /* blockquote styles */
     --blockquote-font-size: 1.5rem;
     --blockquote-line-height: 140%;
+    --blockquote-margin-top: 2rem;
+    --blockquote-margin-bottom: 2rem;
 
     /* list styles */
     --ul-font-size: 1rem;
     --ul-line-height: 140%;
     --ul-margin-top: 1.5rem;
-    --p-margin-bottom: 1.5rem;
+    --ul-margin-bottom: 1.5rem;
 
     /* other styles */
     --border-style: black 1px solid;
@@ -127,6 +131,8 @@ h3 {
     line-height: var(--h3-line-height);
     margin-left: 5%;
     text-transform: uppercase;
+    margin-top: var(--h3-margin-top);
+    margin-bottom: var(--h3-margin-bottom);
 }
 
 p {
@@ -215,6 +221,14 @@ main {
     border-bottom: var(--border-style);
 }
 
+ul {
+    margin-bottom: var(--ul-margin-bottom);
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
 /* class styles */
 .landing-page_container {
     height: 100vh;
@@ -285,8 +299,8 @@ main {
     list-style:square;
 }
 
-li {
-    margin-bottom: 1rem;
+.border-top {
+    border-top: var(--border-style);
 }
 
 @media (min-width: 768px) {
@@ -374,6 +388,11 @@ li {
 
     main {
         padding-top: 10rem;
+    }
+
+    blockquote {
+        margin-top: var(--blockquote-margin-top);
+        margin-bottom: var(--blockquoute-margin-bottom);
     }
 
     /* class styles */
@@ -641,6 +660,7 @@ li {
     .ul-li_normal {
         width: 30vw;
         margin: auto;
+        margin-bottom: var(--ul-margin-bottom);
     }
 
     li {
