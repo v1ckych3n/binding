@@ -269,6 +269,12 @@ main {
     margin-top: var(--ul-margin-top);
     margin-bottom: var(--ul-margin-bottom);
     width: 90vw;
+
+    list-style:square;
+}
+
+li {
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -590,5 +596,14 @@ main {
         word-spacing: 15rem;
         border: var(--border-style);
         background-color: var(--accent-color);
+    }
+
+    .ul-li_normal {
+        width: 30vw;
+        margin: auto;
+    }
+
+    li {
+        margin-bottom: 1.5rem;
     }
 }
