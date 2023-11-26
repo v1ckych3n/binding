@@ -318,7 +318,7 @@ main {
         bottom: 0;
         right: 0;
         left: 0;
-        width: 100%;
+        width: 80%;
         height: 100vh;
         z-index: 2;
     }
@@ -331,7 +331,7 @@ main {
         height: 100vh;
 
         display: flex;
-        align-items: stretch;
+        align-items:flex-end;
         justify-content:last baseline;
     }
 
