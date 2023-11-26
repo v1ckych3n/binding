@@ -412,32 +412,26 @@ li {
         margin-left: -5%;
         margin-right: -5%;
 
-        width: 25rem;
-        height: 25rem;
+        width: 23rem;
+        height: 23rem;
 
         position: relative;
         top: 10rem;
-        left: 5rem;
+        left: 10rem;
         border: var(--border-style);
     }
 
     .header_subtext-top-2 {
-        width: 18rem;
-        height: 18rem;
-
         position: relative;
-        top: 3rem;
+        top: 0rem;
         left: 10rem;
         border: var(--border-style);
     }
 
     .header_subtext-top-3 {
-        width: 18rem;
-        height: 18rem;
-
         position: relative;
         top: 0rem;
-        left: 20rem;
+        left: 10rem;
         border: var(--border-style);
     }
 
@@ -492,7 +486,7 @@ li {
     }
 
     .container_style-one > header {
-        background: var(--accent-color);
+        background: var(--gray-color);
         width: 40vw;
         padding: 3%;
         border-top: var(--border-style);
@@ -632,6 +626,11 @@ li {
         padding: 1rem 2rem;
     }
 
+    .container_style-three-navbar > div > ul > li:hover {
+        background-color: var(--accent-color);
+        transition: ease-in-out 0.3s;
+    }
+
     .container_style-three > section {
         background-color: var(--light-color);
         width: 60vw;
@@ -654,42 +653,5 @@ li {
 
     li {
         margin-bottom: 1.5rem;
-    }
-
-    .container_style-four {
-        position: relative;
-        top: 0;
-
-        margin-top: var(--container-margin-top);
-
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-self: flex-start;
-    }
-
-    .container_style-four > header {
-        background: var(--gray-color);
-        width: 40vw;
-        padding: 3%;
-        border-top: var(--border-style);
-        border-bottom: var(--border-style);
-        border-right: var(--border-style);
-        padding: 3%;
-    }
-
-    .container_style-four > header > h2 {
-        position: sticky;
-        top: 10px;
-
-        color: var(--dark-color);
-    }
-
-    .container_style-four > section {
-        background-color: var(--light-color);
-        width: 60vw;
-        position: relative;
-        border-top: var(--border-style);
-        border-bottom: var(--border-style);
     }
 }
