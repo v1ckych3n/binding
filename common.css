@@ -157,6 +157,8 @@ blockquote {
     font-size: var(--blockquote-font-size);
     line-height: var(--blockquote-line-height);
     margin: auto;
+    margin-top: var(--blockquote-margin-top);
+    margin-bottom: var(--blockquote-margin-bottom);
     width: 90vw;
 }
 
@@ -203,6 +205,12 @@ nav > ul > li {
 }
 
 /* Reminder: add a hover effect to the navbar link */
+nav > ul > li > a {
+    color: var(--dark-color);
+    text-decoration: none;
+    text-decoration-color: white;
+    text-decoration-thickness: 0px;
+}
 
 nav > ul > li > a > span:first-of-type {
     writing-mode: horizontal-tb;
@@ -303,6 +311,14 @@ li {
     border-top: var(--border-style);
 }
 
+a {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+    text-underline-offset: .25rem;
+    color: blue;
+}
+
 @media (min-width: 768px) {
 
 }
@@ -318,17 +334,23 @@ li {
 
         --h3-font-size: 3rem;
         --h3-line-height: 100%;
+        --h3-margin-top: 3rem;
+        --h3-margin-bottom: 3rem;
 
         --p-font-size: 1rem;
         --p-margin-top: 3rem;
         --p-margin-bottom: 3rem;
         --p-line-height: 180%;
 
+        --ul-font-size: 1rem;
+        --ul-margin-bottom: 3rem;
+
         --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
 
-        --ul-font-size: 1rem;
         --blockquote-font-size: 2rem;
+        --blockquote-margin-top: 5rem;
+        --blockquote-margin-bottom: 5rem;
 
         /* other styles */
         --border-style: black 1.5px solid;
@@ -394,6 +416,45 @@ li {
     blockquote {
         margin-top: var(--blockquote-margin-top);
         margin-bottom: var(--blockquoute-margin-bottom);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--light-color);
+        color: var(--dark-color);
+
+        font-family: var(--heading-font);
+        font-size: var(--navbar-font-size);
+        text-transform: uppercase;
+        
+        margin: 0;
+        margin-bottom: -5%;
+    }
+
+    footer > ul { 
+        margin: 0;
+    }
+
+    footer > ul > li {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        width: 100vw;
+
+        margin: 0;
+        border: var(--border-style);
+    }
+
+    footer > ul > li > a {
+        text-decoration: none;
+        color: var(--dark-color);
+    }
+
+    footer > ul > li > a > span:nth-of-type(2) {
+        display: inline;
+        padding: 1rem 1.5rem;
     }
 
     /* class styles */
@@ -478,6 +539,44 @@ li {
         height: 110%;
         left: -0.5rem;
         /* top: -0.1rem; */
+        padding: 0.1rem 0.25rem;
+        border: red 5px solid;
+        
+        transform: rotate(-1deg);
+        border-radius: 100%;
+    }
+
+    .footer_red-pen-mark {
+        position: relative;
+    }
+    
+    .footer_red-pen-mark:before {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        z-index: 1000;
+    
+        width: 120%;
+        height: 110%;
+        left: -0.5rem;
+        
+        padding: 0.1rem 0.25rem;
+        border: red 5px solid;
+    
+        transform: rotate(2deg);
+        border-radius: 100%;
+    }
+    
+    .footer_red-pen-mark:after {
+        content: "";
+        position: absolute;
+        z-index: 1000;
+        top: -1rem;
+    
+        width: 120%;
+        height: 110%;
+        left: -0.5rem;
+       
         padding: 0.1rem 0.25rem;
         border: red 5px solid;
         
@@ -638,6 +737,13 @@ li {
         padding: 1rem 2rem;
     }
 
+    .container_style-three-navbar > div > ul > li > a {
+        color: var(--dark-color);
+        text-decoration: none;
+        text-decoration-color: white;
+        text-decoration-thickness: 0px;
+    }
+
     .container_style-three-navbar > div > ul > li:hover {
         background-color: var(--accent-color);
         transition: ease-in-out 0.3s;
@@ -662,9 +768,5 @@ li {
         width: 30vw;
         margin: auto;
         margin-bottom: var(--ul-margin-bottom);
-    }
-
-    li {
-        margin-bottom: 1.5rem;
     }
 }
