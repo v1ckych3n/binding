@@ -810,4 +810,33 @@ a {
         margin: auto;
         margin-bottom: var(--ul-margin-bottom);
     }
+
+    .text-imagery_interface-writing {
+        font-family: var(--heading-font);
+        font-size: 7rem;
+        text-transform: uppercase;
+        line-height: 90%;
+        text-align: center;
+        color: var(--gray-color);
+
+        margin: 0;
+        margin: auto;
+        width: 100vw;
+    }
+
+    .black-color {
+        color: var(--dark-color);
+    }
+
+    .red-color {
+        color: red;
+    }
+
+    .blue-color {
+        color: blue;
+    }
+
+    .accent-color {
+        color: var(--accent-color);
+    }
 }
