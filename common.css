@@ -572,7 +572,7 @@ a {
         padding: 0.1rem 0.25rem;
         border: red 5px solid;
     
-        transform: rotate(2deg);
+        transform: rotate(1deg);
         border-radius: 100%;
     }
     
