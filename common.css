@@ -589,10 +589,17 @@ li {
         border-top: var(--border-style);
         border-bottom: var(--border-style);
         border-right: var(--border-style);
+        border-left: var(--border-style);
         padding: 3%;
 
         position: relative;
         top: 0;
+    }
+
+    .container_style-three > header > h2 {
+        color: var(--light-color);
+        position: sticky; 
+        top: 10px;
     }
 
     .container_style-three-navbar {
@@ -617,6 +624,12 @@ li {
         font-size: 2rem;
         font-family: var(--heading-font);
         text-transform: uppercase;
+        margin: 0;
+
+        border-bottom: var(--border-style);
+        border-left: var(--border-style);
+
+        padding: 1rem 2rem;
     }
 
     .container_style-three > section {
