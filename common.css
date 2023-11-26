@@ -590,17 +590,33 @@ li {
         border-bottom: var(--border-style);
         border-right: var(--border-style);
         padding: 3%;
-    }
 
-    .container_style-three > header > h2 {
-        position: sticky;
-        top: 10px;
-
-        color: var(--light-color);
+        position: relative;
+        top: 0;
     }
 
     .container_style-three-navbar {
+        color: var(--dark-color);
+        position: sticky;
+        top: 10px;
+    }
+
+    .container_style-three-navbar > h2 {
         color: var(--light-color);
+    }
+
+    .container_style-three-navbar > div > ul {
+        background-color: var(--light-color);
+        
+        width: 40vw;
+        margin-left: -9%;
+        margin-right: -9%;
+    }
+
+    .container_style-three-navbar > div > ul > li {
+        font-size: 2rem;
+        font-family: var(--heading-font);
+        text-transform: uppercase;
     }
 
     .container_style-three > section {
