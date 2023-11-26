@@ -311,11 +311,6 @@ main {
         margin: auto;
     }
 
-    /* ul {
-        margin: auto;
-        width: 40vw;
-    } */
-
     /* Semantic DOM styles */
     nav {
         position: sticky;
@@ -534,4 +529,10 @@ main {
         background-color: var(--dark-color);
         color: var(--light-color);
     }
+
+    /* ID tags */
+    /* #self {
+        padding: 300px;
+        margin: -300px;
+    } */
 }
