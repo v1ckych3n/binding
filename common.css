@@ -47,7 +47,7 @@
     --accent-color: #DAFF48;
     --gray-color: #F0EFEE;
     --post-it-color: #fdfdbf;
-    --highlighter-color: #FFBCD9;
+    --highlighter-color: #bcefff;
 
     /* font styles */
     --main-font: Monaspace Neon;
@@ -271,6 +271,11 @@ main {
     width: 90vw;
 }
 
+@media (min-width: 768px) {
+
+}
+
+
 @media (min-width: 1280px) {
     :root {
         --h1-font-size: 7rem;
@@ -453,7 +458,7 @@ main {
         border-radius: 100%;
     }
 
-    .container_style-one {
+    article.container_style-one {
         position: relative;
 
         margin-top: var(--container-margin-top);
