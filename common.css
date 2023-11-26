@@ -417,21 +417,13 @@ li {
 
         position: relative;
         top: 10rem;
-        left: 10rem;
+        left: 8rem;
         border: var(--border-style);
     }
 
     .header_subtext-top-2 {
         position: relative;
         top: 0rem;
-        left: 10rem;
-        border: var(--border-style);
-    }
-
-    .header_subtext-top-3 {
-        position: relative;
-        top: 0rem;
-        left: 10rem;
         border: var(--border-style);
     }
 
