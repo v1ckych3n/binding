@@ -529,6 +529,7 @@ li {
         margin-top: var(--section-margin-top);
         margin-bottom: var(--section-margin-bottom);
 
+        font-family: var(--main-font);
         text-transform: uppercase;
         font-size: x-large;
 
