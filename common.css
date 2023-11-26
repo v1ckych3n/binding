@@ -47,7 +47,7 @@
     --accent-color: #DAFF48;
     --gray-color: #F0EFEE;
     --post-it-color: #fdfdbf;
-    --highlighter-color: #bcefff;
+    --highlighter-color: #FFFF00;
 
     /* font styles */
     --main-font: Monaspace Neon;
@@ -78,7 +78,7 @@
 
     /* list styles */
     --ul-font-size: 1rem;
-    --ul-line-height: 100%;
+    --ul-line-height: 140%;
     --ul-margin-top: 1.5rem;
     --p-margin-bottom: 1.5rem;
 
@@ -292,7 +292,7 @@ main {
         --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
 
-        --ul-font-size: 1.25rem;
+        --ul-font-size: 1rem;
         --blockquote-font-size: 2rem;
 
         /* other styles */
@@ -458,8 +458,9 @@ main {
         border-radius: 100%;
     }
 
-    article.container_style-one {
+    .container_style-one {
         position: relative;
+        top: 0;
 
         margin-top: var(--container-margin-top);
 
@@ -470,9 +471,6 @@ main {
     }
 
     .container_style-one > header {
-        position: sticky;
-        top: 0;
-
         background: var(--accent-color);
         width: 40vw;
         padding: 3%;
@@ -480,6 +478,11 @@ main {
         border-bottom: var(--border-style);
         border-right: var(--border-style);
         padding: 3%;
+    }
+
+    .container_style-one > header > h2 {
+        position: sticky;
+        top: 10px;
     }
 
     .container_style-one > section {
@@ -495,12 +498,19 @@ main {
         display: flex;
         flex-direction: column;
         align-self: flex-start;
+
+        position: relative;
     }
 
     .container_style-two > header {
         /* padding: 3%; --> added to the main h2*/ 
         border-bottom: var(--border-style);
         margin-bottom: var(--container-margin-bottom);
+        background-color: var(--light-color);
+
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
 
     .circle-container {
@@ -514,11 +524,11 @@ main {
         margin-bottom: var(--section-margin-bottom);
 
         text-transform: uppercase;
-        font-size:x-large;
+        font-size: x-large;
 
-        position: sticky;
+        /* position: sticky;
         top: 0;
-        z-index: 10;
+        z-index: 10; */
     }
 
     .circle-container > li {
@@ -538,6 +548,47 @@ main {
         color: var(--light-color);
     }
 
-    /* ID tags */
+    .container_style-three {
+        position: relative;
+        top: 0;
+
+        margin-top: var(--container-margin-top);
+
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-self: flex-start;
+    }
+
+    .container_style-three > header {
+        background: var(--dark-color);
+        width: 40vw;
+        padding: 3%;
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+        border-right: var(--border-style);
+        padding: 3%;
+    }
+
+    .container_style-three > header > h2 {
+        position: sticky;
+        top: 10px;
+
+        color: var(--light-color);
+    }
+
+    .container_style-three > section {
+        background-color: var(--light-color);
+        width: 60vw;
+        position: relative;
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+    }
+
+    .imagery_gap {
+        content:"";
+        word-spacing: 15rem;
+        border: var(--border-style);
+        background-color: var(--accent-color);
     }
 }
