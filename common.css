@@ -322,7 +322,7 @@ li {
         --p-font-size: 1rem;
         --p-margin-top: 3rem;
         --p-margin-bottom: 3rem;
-        --p-line-height: 160%;
+        --p-line-height: 180%;
 
         --navbar-font-size: 6rem;
         --special-background-character_font-size: 75rem;
@@ -343,11 +343,12 @@ li {
         margin: auto;
         margin-top: var(--p-margin-top);
         margin-bottom: var(--p-margin-bottom);
-        width: 40vw;
+        width: 37vw;
     }
 
     blockquote {
-        width: 40vw;
+        width: 47vw;
+        text-align: center;
         margin: auto;
     }
 
