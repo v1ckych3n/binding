@@ -74,9 +74,9 @@
 
     /* paragraph styles */
     --p-font-size: 1rem;
-    --p-line-height: 140%;
-    --p-margin-top: 1.5rem;
-    --p-margin-bottom: 1.5rem;
+    --p-line-height: 170%;
+    --p-margin-top: 2rem;
+    --p-margin-bottom: 2rem;
 
     /* blockquote styles */
     --blockquote-font-size: 1.5rem;
