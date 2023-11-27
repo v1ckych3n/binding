@@ -303,6 +303,7 @@ a:hover {
     z-index: 10;
 
     width: 100vw;
+    margin-top: -12%;
 }
 
 .navbar_home > ul { 
