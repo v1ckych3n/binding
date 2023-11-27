@@ -306,19 +306,19 @@ a:hover {
 }
 
 .navbar_home > ul { 
-    width: 33%;
+    width: 33.33%;
 }
 
 .navbar_home > ul > li {
     border: var(--border-style);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: last baseline;
 
     padding: auto;
     width: 100%;
-    height: 12vh;
+    height: 50vh;
     background-color: var(--light-color);
 }
 
@@ -335,7 +335,7 @@ a:hover {
 }
 
 .navbar_home > ul > li > a > span:nth-of-type(2) {
-    display: none;
+    display: inline;
 }
 
 .landing-page_container {
