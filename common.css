@@ -242,7 +242,102 @@ li {
     margin-bottom: 1rem;
 }
 
+a {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+    text-underline-offset: .25rem;
+    color: blue;
+}
+
+a:hover {
+    text-decoration-color: red;
+    color: red;
+
+    transition: ease-in-out 0.3s;
+}
+
 /* class styles */
+
+/* HOME page class styles */
+.imagery_intro-landing {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+}
+
+.imagery_intro-landing > p {
+    font-family: var(--heading-font);
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    font-size: 13rem;
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+
+    border-right: 1.5px solid white;
+    border-top: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+}
+
+.navbar_home {
+    color: var(--dark-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: var(--navbar-font-size);
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    width: 100vw;
+}
+
+.navbar_home > ul { 
+    width: 33%;
+}
+
+.navbar_home > ul > li {
+    border: var(--border-style);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: auto;
+    width: 100%;
+    height: 12vh;
+    background-color: var(--light-color);
+}
+
+.navbar_home > ul > li > a {
+    color: var(--dark-color);
+    text-decoration: none;
+    text-decoration-color: white;
+    text-decoration-thickness: 0px;
+}
+
+.navbar_home > ul > li > a > span:nth-of-type(1) {
+    writing-mode: horizontal-tb;
+    transform: rotate(-180deg);
+}
+
+.navbar_home > ul > li > a > span:nth-of-type(2) {
+    display: none;
+}
+
 .landing-page_container {
     height: 100vh;
     width: 100%;
@@ -314,21 +409,6 @@ li {
 
 .border-top {
     border-top: var(--border-style);
-}
-
-a {
-    text-decoration: underline;
-    text-decoration-color: blue;
-    text-decoration-thickness: 3px;
-    text-underline-offset: .25rem;
-    color: blue;
-}
-
-a:hover {
-    text-decoration-color: red;
-    color: red;
-
-    transition: ease-in-out 0.3s;
 }
 
 @media (min-width: 768px) {
@@ -928,6 +1008,9 @@ a:hover {
         margin: 0;
         margin: auto;
         width: 100vw;
+
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--dark-color);
     }
 
     .black-color {
