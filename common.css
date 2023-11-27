@@ -568,6 +568,10 @@ a:hover {
         color: var(--dark-color);
     }
 
+    .intro_colophon {
+        text-align: center;
+    }
+
     /* other pages styles */
     .landing-page_container {
         display: grid;
