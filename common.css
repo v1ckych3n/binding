@@ -295,7 +295,7 @@ a:hover {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 
-    position: fixed;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
@@ -336,6 +336,59 @@ a:hover {
 
 .navbar_home > ul > li > a > span:nth-of-type(2) {
     display: inline;
+}
+
+.navbar_home-fixed {
+    color: var(--dark-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: var(--navbar-font-size);
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+
+    width: 100vw;
+}
+
+.navbar_home-fixed > ul { 
+    width: 33.33%;
+}
+
+.navbar_home-fixed > ul > li {
+    border: var(--border-style);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: auto;
+    width: 100%;
+    height: 15vh;
+    background-color: var(--light-color);
+}
+
+.navbar_home-fixed > ul > li > a {
+    color: var(--dark-color);
+    text-decoration: none;
+    text-decoration-color: white;
+    text-decoration-thickness: 0px;
+}
+
+.navbar_home-fixed > ul > li > a > span:nth-of-type(1) {
+    writing-mode: horizontal-tb;
+    transform: rotate(-180deg);
+}
+
+.navbar_home-fixed > ul > li > a > span:nth-of-type(2) {
+    display: none;
 }
 
 .landing-page_container {
