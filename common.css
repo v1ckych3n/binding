@@ -466,11 +466,34 @@ a:hover {
     border-top: var(--border-style);
 }
 
+/* color styles */
+.black-color {
+    color: var(--dark-color);
+}
+
+.red-color {
+    color: red;
+}
+
+.blue-color {
+    color: blue;
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
+/* TABLET MEDIA QUERY */
 @media (min-width: 768px) {
 
 }
 
-
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
+/* DESKTOP MEDIA QUERY */
 @media (min-width: 1280px) {
     :root {
         --h1-font-size: 7rem;
@@ -1042,21 +1065,5 @@ a:hover {
 
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: var(--dark-color);
-    }
-
-    .black-color {
-        color: var(--dark-color);
-    }
-
-    .red-color {
-        color: red;
-    }
-
-    .blue-color {
-        color: blue;
-    }
-
-    .accent-color {
-        color: var(--accent-color);
     }
 }
