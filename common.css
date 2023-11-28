@@ -40,6 +40,10 @@
     src: url(fonts/Chomsky.otf);
 }
 
+
+/* MOBILE MOBILE MOBILE !!! */
+/* MOBILE MOBILE MOBILE !!! */
+/* MOBILE MOBILE MOBILE !!! */
 :root {
     /* color styles */
     --light-color: white;
@@ -141,6 +145,7 @@ p {
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
     margin: auto;
+    margin-top: var(--p-margin-top);
     margin-bottom: var(--p-margin-bottom);
     width: 90vw;
 }
@@ -168,6 +173,8 @@ mark {
 }
 
 /* Semantic DOM styles */
+
+/* navigation bar styles {starts} */
 nav {
     color: var(--dark-color);
     font-family: var(--heading-font);
@@ -205,7 +212,6 @@ nav > ul > li {
     background-color: var(--light-color);
 }
 
-/* Reminder: add a hover effect to the navbar link */
 nav > ul > li > a {
     color: var(--dark-color);
     text-decoration: none;
@@ -225,6 +231,7 @@ nav > ul > li > a > span:nth-of-type(2) {
 nav > ul > li > a:hover {
     color: var(--dark-color);
 }
+/* navigation bar styles {ends} */
 
 main {
     background-color: var(--light-color);
@@ -269,20 +276,44 @@ a:hover {
     margin: 0;
 }
 
-.imagery_intro-landing > p {
-    font-family: var(--heading-font);
+.imagery_intro-landing > div {
+    border-right: 1.5px solid white;
+    /* border-top: 1.5px solid white; */
+    border-bottom: 1.5px solid white;
+
+    background-color: var(--dark-color);    
     width: 100vw;
     height: 20vh;
-    background-color: var(--dark-color);
+    position: relative;
+    z-index: 1;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--dark-color);
+}
+
+.imagery_intro-landing > div > p {
+    font-family: var(--heading-font);
     color: var(--accent-color);
-    font-size: 13rem;
+    font-size: 25rem;
     text-align: center;
     margin: 0;
     vertical-align: middle;
 
-    border-right: 1.5px solid white;
-    border-top: 1.5px solid white;
-    border-bottom: 1.5px solid white;
+    position: relative;
+    top: -14rem;
+    z-index: -1
+}
+
+.imagery_intro-landing > div:nth-of-type(1) > p {
+    left: -3rem;
+}
+
+.imagery_intro-landing > div:nth-of-type(2) > p {
+    left: 3rem;
+}
+
+.imagery_intro-landing > div:nth-of-type(3) > p {
+    left: -3rem;
 }
 
 .navbar_home {
