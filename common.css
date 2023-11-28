@@ -605,103 +605,111 @@ mark {
         margin: auto;
     }
 
+    
     /* Semantic DOM styles */
-    nav {
-        position: sticky;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 75%;
-        height: 100vh;
-        z-index: 2;
+        /* NAV styles {starts} */
+            nav {
+                position: sticky;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 75%;
+                height: 100vh;
+                z-index: 2;
 
-        justify-self: end;
-    }
+                justify-self: end;
+            }
 
-    nav > ul > li {
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        height: 100vh;
+            nav > ul > li {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                height: 100vh;
 
-        display: flex;
-        align-items: stretch;
-        justify-content: last baseline;
-    }
+                display: flex;
+                align-items: stretch;
+                justify-content: last baseline;
+            }
 
-    nav > ul > li:hover {
-        background-color: var(--accent-color);
-        color: var(--dark-color);
-        transition: ease-in-out 0.3s;
-    }
+            nav > ul > li:hover {
+                background-color: var(--accent-color);
+                color: var(--dark-color);
+                transition: ease-in-out 0.3s;
+            }
 
-    nav > ul > li > a > span:nth-of-type(2) {
-        display: inline;
-    }
+            nav > ul > li > a > span:nth-of-type(2) {
+                display: inline;
+            }
+        /* NAV styles {ends} */
 
-    main {
-        padding-top: 10rem;
-    }
 
-    blockquote {
-        margin-top: var(--blockquote-margin-top);
-        margin-bottom: var(--blockquoute-margin-bottom);
-    }
+        main {
+            padding-top: 10rem;
+        }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        background-color: var(--light-color);
-        color: var(--dark-color);
+        blockquote {
+            margin-top: var(--blockquote-margin-top);
+            margin-bottom: var(--blockquoute-margin-bottom);
+        }
 
-        font-family: var(--heading-font);
-        font-size: var(--navbar-font-size);
-        text-transform: uppercase;
-        
-        margin: 0;
-    }
 
-    footer > ul { 
-        margin: 0;
-    }
+        /* FOOTER styles {starts} */
+            footer {
+                display: flex;
+                flex-direction: row;
+                background-color: var(--light-color);
+                color: var(--dark-color);
 
-    footer > ul > li {
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        width: 100vw;
+                font-family: var(--heading-font);
+                font-size: var(--navbar-font-size);
+                text-transform: uppercase;
+                
+                margin: 0;
+            }
 
-        margin: 0;
-        border: var(--border-style);
-    }
+            footer > ul { 
+                margin: 0;
+            }
 
-    footer > ul > li:hover {
-        background-color: var(--accent-color);
-        transition: ease-in-out 0.3s;
+            footer > ul > li {
+                padding-top: 1.5rem;
+                padding-bottom: 1rem;
+                padding-right: 1.5rem;
+                padding-left: 1.5rem;
+                width: 100vw;
 
-        color: var(--dark-color);
-    }
+                margin: 0;
+                border: var(--border-style);
+            }
 
-    footer > ul > li > a {
-        text-decoration: none;
-        color: var(--dark-color);
-    }
+            footer > ul > li:hover {
+                background-color: var(--accent-color);
+                transition: ease-in-out 0.3s;
 
-    footer > ul > li > a > span:nth-of-type(1) {
-        padding-left: 2rem;
-    }
+                color: var(--dark-color);
+            }
 
-    footer > ul > li > a > span:nth-of-type(2) {
-        display: inline;
-        padding: 1rem 1.5rem;
-    }
+            footer > ul > li > a {
+                text-decoration: none;
+                color: var(--dark-color);
+            }
 
-    footer > ul > li > a:hover {
-        color: var(--dark-color);
-    }
+            footer > ul > li > a > span:nth-of-type(1) {
+                padding-left: 2rem;
+            }
+
+            footer > ul > li > a > span:nth-of-type(2) {
+                display: inline;
+                padding: 1rem 1.5rem;
+            }
+
+            footer > ul > li > a:hover {
+                color: var(--dark-color);
+            }
+        /* FOOTER styles {ends} */
+    /* SEMANTIC DOM styles {ends} */
 
     /* class styles */
 
