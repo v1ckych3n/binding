@@ -355,6 +355,7 @@ mark {
             border: var(--border-style);
             display: flex;
             flex-direction: column;
+            column-gap: .25rem;
             align-items: stretch;
             justify-content: last baseline;
 
@@ -374,7 +375,7 @@ mark {
         .navbar_home > ul > li > a > span:nth-of-type(1) {
             writing-mode: horizontal-tb;
             transform: rotate(-180deg);
-            padding: 1.5rem;
+            padding: .5rem;
         }
 
         .navbar_home > ul > li > a > span:nth-of-type(2) {
@@ -784,51 +785,7 @@ mark {
             }
 
             /* NAVIGATION BAR (FIXED) class styles {starts} */
-                .navbar-fixed {
-                    color: var(--dark-color);
-                    font-family: var(--heading-font);
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    font-size: var(--navbar-font-size);
-    
-                    writing-mode: vertical-rl;
-                    transform: rotate(180deg);
-    
-                    position: fixed;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    z-index: 9;
-    
-                    width: 100vw;
-                }
-    
-                .navbar-fixed > ul { 
-                    width: 25%;
-                }
-    
-                .navbar-fixed > ul > li {
-                    border: var(--border-style);
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-    
-                    /* padding: auto; */
-                    width: 100%;
-                    height: 15vh;
-                    background-color: var(--light-color);
-                }
-    
-                .navbar-fixed > ul > li > a {
-                    color: var(--dark-color);
-                    text-decoration: none;
-                    text-decoration-color: white;
-                    text-decoration-thickness: 0px;
-                    writing-mode: horizontal-tb;
-                    transform: rotate(-180deg);
-                }
+                
             /* NAVIGATION BAR (FIXED) class styles {ends} */
         /* NAVIGATION BAR styles {ends} */
         
@@ -839,6 +796,7 @@ mark {
                 grid-template-columns: 2fr 1fr;
                 height: 100vh;
                 width: 100%;
+                background-color: var(--dark-color);
 
                 position: relative;
                 z-index: 20;
