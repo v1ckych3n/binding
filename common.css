@@ -829,22 +829,25 @@ mark {
             }
         /* LANDING SECTION class styles {ends} */
 
+        /* CONTAINER STYLES class styles {starts} */
+            .container_style-one > header, .container_style-two > header, .container_style-three > header {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+        /* CONTAINER STYLES class styles {ends} */
+
         /* DECORATIVE FEATURES class styles {starts} */
             .ul-li_normal {
                 width: 55vw;
             }
 
-            .circle-container {
+            .circle-container, .circle-container_content-style-three {
                 font-size: xx-large;
             }
 
             .circle-container > li {
                 width: 350px;
                 height: 350px;
-            }
-
-            .circle-container_content-style-three {
-                font-size: xx-large;
             }
 
             .circle-container_content-style-three > li {
@@ -1153,9 +1156,6 @@ mark {
                 border-bottom: var(--border-style);
                 margin-bottom: var(--container-margin-bottom);
                 background-color: var(--light-color);
-
-                padding-top: 2rem;
-                padding-bottom: 2rem;
 
                 position: sticky;
                 top: 0;
