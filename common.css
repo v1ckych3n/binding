@@ -46,7 +46,11 @@
     --accent-color: #DAFF48;
     --gray-color: #F0EFEE;
     --post-it-color: #fdfdbf;
+    --post-it-color-2: #bedee9;
+    --post-it-color-3: #ffc7d0;
     --highlighter-color: #FFFF00;
+    --highlighter-color-2: #77ffe4;
+    --highlighter-color-3: #ff77e4;
 
     /* font styles */
     --main-font: Monaspace Neon;
@@ -173,6 +177,14 @@ blockquote {
 
 mark {
     background-color: var(--highlighter-color);
+}
+
+.highlighter-color-2 {
+    background-color: var(--highlighter-color-2);
+}
+
+.highlighter-color-3 {
+    background-color: var(--highlighter-color-3);
 }
 
 /* Semantic DOM styles {starts} */
@@ -1098,6 +1110,14 @@ mark {
                 top: 12rem;
                 left: 8rem;
                 border: var(--border-style);
+            }
+
+            .is-blue {
+                background-color: var(--post-it-color-2);
+            }
+
+            .is-pink {
+                background-color: var(--post-it-color-3);
             }
 
             .header_subtext-top-2 {
