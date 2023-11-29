@@ -1038,6 +1038,10 @@ mark {
                 margin-bottom: 25vh;
             }
 
+            .intro_colophon > header > h1 {
+                width: 75vw;
+            }
+
             .colophon-sticky-1 {
                 left: 6rem;
             }
