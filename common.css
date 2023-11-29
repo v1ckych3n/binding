@@ -317,17 +317,26 @@ mark {
             margin-bottom: 20vh;
         }
 
-        .colophon-sticky {
+        .colophon-sticky-1, .colophon-sticky-2, .colophon-sticky-3 {
             background: var(--post-it-color);
             color: var(--dark-color);
 
             padding: 1rem;
-            margin: 0;
 
             width: 100vw;
             height: 23rem;
 
-            border-bottom: var(--border-style);
+            border: var(--border-style);
+        }
+
+        .colophon-sticky-1 > header > p, .colophon-sticky-2 > header > p, .colophon-sticky-3 > header > p {
+            font-size: 2rem;
+        }
+
+        .colophon-sticky-1 > p, .colophon-sticky-2 > p, .colophon-sticky-3 > p {
+            width: 100%;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
         }
     /* HOME page class styles {ends} */
 
@@ -816,6 +825,30 @@ mark {
             .imagery_intro-landing > div:first-of-type > p, .imagery_intro-landing > div:nth-of-type(2) > p, .imagery_intro-landing > div:last-of-type > p {
                 left: -10rem;
             }
+            
+            .colophon-sticky-1, .colophon-sticky-2, .colophon-sticky-3 {
+                width: 400px;
+                height: 400px;
+                padding: 1.5rem;
+            }
+
+            .colophon-sticky-1 {
+                position: relative;
+                left: 6rem;
+            }
+
+            .colophon-sticky-2 {
+                position: relative;
+                left: 22rem;
+                top: -12rem;
+            }
+
+            .colophon-sticky-3 {
+                position: relative;
+                top: -17rem;
+                left: 2rem;
+            }
+
         /* HOME page class styles {ends} */
 
 
