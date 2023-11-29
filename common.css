@@ -811,7 +811,12 @@ mark {
                 height: 100%;
             }
         /* NAVIGATION BAR styles {ends} */
-
+        
+        /* LANDING SECTION class styles {starts} */
+            .landing-page_container > header > p:first-of-type {
+                margin: 0;
+            }
+        /* LANDING SECTION class styles {ends} */
 
         /* DECORATIVE FEATURES class styles {starts} */
             .ul-li_normal {
