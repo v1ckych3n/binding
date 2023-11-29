@@ -470,7 +470,9 @@ mark {
         .container_style-one {
             width: 100%;
             border-top: var(--border-style);
-            border-bottom: var(--border-style);
+            /* border-bottom: var(--border-style); */
+
+            margin-top: 5rem;
         }
 
         .container_style-one > header {
@@ -496,6 +498,9 @@ mark {
         .container_style-two {
             width: 100%;
             position: relative;
+
+            margin-top: 5rem;
+            border-top: var(--border-style);
         }
 
         .container_style-two > header { 
@@ -514,7 +519,9 @@ mark {
     /* CONTAINER STYLE THREE class styles {starts} */
         .container_style-three {
             width: 100%;
-            border-bottom: var(--border-style);
+            /* border-bottom: var(--border-style); */
+
+            margin-top: 5rem;
         }
 
         .container_style-three > header {
@@ -816,6 +823,10 @@ mark {
             .landing-page_container > header > p:first-of-type {
                 margin-left: var(--main-padding);
             }
+
+            .header_author {
+                font-size: 1.5rem;
+            }
         /* LANDING SECTION class styles {ends} */
 
         /* DECORATIVE FEATURES class styles {starts} */
@@ -1078,10 +1089,6 @@ mark {
                 z-index: 20;
             }
 
-            .header_author {
-                font-size: 1.5rem;
-            }
-
             .header_subtext {
                 background: var(--post-it-color);
                 color: var(--dark-color);
@@ -1094,7 +1101,7 @@ mark {
                 height: 23rem;
 
                 position: relative;
-                top: 10rem;
+                top: 8.5rem;
                 left: 8rem;
                 border: var(--border-style);
             }
@@ -1173,10 +1180,6 @@ mark {
                 height: 100vh;
         
                 border-left: var(--border-style);
-
-                width: 40vw;
-                height: 100vh;
-                border-right: var(--border-style);
             }
 
             .container_style-three > header > h2 {
@@ -1209,7 +1212,7 @@ mark {
             }
 
             .container_style-three-navbar > div > ul > li {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 font-family: var(--heading-font);
                 text-transform: uppercase;
                 margin: 0;
