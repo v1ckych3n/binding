@@ -1034,8 +1034,22 @@ mark {
             }
 
             .intro_colophon {
-                margin-top: -20%;
+                margin-top: -10%;
                 margin-bottom: 25vh;
+            }
+
+            .colophon-sticky-1 {
+                left: 6rem;
+            }
+
+            .colophon-sticky-2 {
+                left: 43rem;
+                top: -12rem;
+            }
+
+            .colophon-sticky-3 {
+                top: -30rem;
+                left: 15rem;
             }
         /* HOME page class styles {ends} */
 
