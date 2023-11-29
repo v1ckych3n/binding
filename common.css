@@ -499,7 +499,6 @@ mark {
             width: 100%;
             position: relative;
 
-            margin-top: 5rem;
             border-top: var(--border-style);
         }
 
@@ -520,8 +519,6 @@ mark {
         .container_style-three {
             width: 100%;
             /* border-bottom: var(--border-style); */
-
-            margin-top: 5rem;
         }
 
         .container_style-three > header {
