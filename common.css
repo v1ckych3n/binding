@@ -341,6 +341,14 @@ mark {
             border: var(--border-style);
         }
 
+        .colophon-sticky-2 {
+            background-color: var(--post-it-color-2);
+        }
+
+        .colophon-sticky-3 {
+            background-color: var(--post-it-color-3);
+        }
+
         .colophon-sticky-1 > header > p, .colophon-sticky-2 > header > p, .colophon-sticky-3 > header > p {
             font-size: 2rem;
         }
@@ -501,7 +509,7 @@ mark {
             border-top: var(--border-style);
             /* border-bottom: var(--border-style); */
 
-            margin-top: 5rem;
+            /* margin-top: 5rem; */
         }
 
         .container_style-one > header {
@@ -1130,7 +1138,7 @@ mark {
         
         /* CONTAINER STYLE ONE class styles {starts} */
             .container_style-one {
-                margin-top: var(--container-margin-top);
+                /* margin-top: var(--container-margin-top); */
 
                 display: flex;
                 flex-direction: row;
@@ -1180,7 +1188,7 @@ mark {
                 position: relative;
                 top: 0;
 
-                margin-top: var(--container-margin-top);
+                /* margin-top: var(--container-margin-top); */
 
                 display: flex;
                 flex-direction: row-reverse;
