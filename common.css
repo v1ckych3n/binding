@@ -316,10 +316,6 @@ mark {
         .imagery_intro-landing > div:nth-of-type(2) > p {
             left: 5rem;
         }
-
-        .intro_colophon > header >  h1 {
-            margin-top: 3rem;
-        }
     /* HOME page class styles {ends} */
 
 
@@ -445,19 +441,6 @@ mark {
             height: 100vh;
             width: 100%;
         }
-
-        /* .special-background-character {
-            font-family: var(--special-background-character_font-family);
-            font-size: var(--special-background-character_font-size);
-
-            position: fixed;
-            top: -40rem;
-            z-index: -1;
-            color: transparent;
-            opacity: 25%;
-            -webkit-text-stroke-color: white;
-            -webkit-text-stroke-width: 1px;
-        } */
 
         .landing-page_container > header {
             margin-top: 5%;
@@ -602,6 +585,38 @@ mark {
             border-radius: 100%;
         }
 
+        .navbar-bottom_red-pen-mark {
+            position: relative;
+        }
+        
+        .navbar-bottom_red-pen-mark:before {
+            content: "";
+            position: absolute;
+            z-index: 1000;
+        
+            width: 50%;
+            height: 90%;
+            padding: 0.1rem 0.25rem;
+            border: red 4px solid;
+        
+            transform: rotate(2deg);
+            border-radius: 100%;
+        }
+        
+        .navbar-bottom_red-pen-mark:after {
+            content: "";
+            position: absolute;
+            z-index: 1000;
+        
+            width: 50%;
+            height: 90%;
+            padding: 0.1rem 0.25rem;
+            border: red 4px solid;
+            
+            transform: rotate(-2deg);
+            border-radius: 100%;
+        }
+
         /* circle container {starts} */
             .circle-container {
                 display: flex;
@@ -648,27 +663,25 @@ mark {
 
                 font-family: var(--main-font);
                 text-transform: uppercase;
-                font-size: x-large;
+                font-size: large;
             }
 
             .circle-container_content-style-three > li {
                 border-radius: 100%;
                 position: relative;
-            
+                margin: 0;
                 display: flex;
                 
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                margin: 0;
                 padding: 2rem;
 
                 border: var(--border-style);
-                width: 250px;
-                height: 250px;
+                width: 150px;
+                height: 150px;
                 background-color: var(--light-color);
                 color: var(--dark-color);
-                font-weight: 800;
             }
         /* circle container {ends} */
 
@@ -710,6 +723,22 @@ mark {
             border: var(--border-style);
             background-color: var(--accent-color);
         }
+
+        .text-imagery_interface-writing {
+            font-family: var(--heading-font);
+            font-size: 3rem;
+            text-transform: uppercase;
+            line-height: 90%;
+            text-align: center;
+            color: var(--gray-color);
+
+            margin: 0;
+            margin: auto;
+            width: 100vw;
+
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--dark-color);
+        }    
     /* DECORATIVE FEATURES class styles {ends} */
 /* class styles MOBILE {ends} */
 
@@ -913,10 +942,6 @@ mark {
             .imagery_intro-landing > div:first-of-type > p, .imagery_intro-landing > div:nth-of-type(2) > p, .imagery_intro-landing > div:last-of-type > p {
                 left: -10rem;
             }
-
-            .intro_colophon > header > h1 {
-                margin-top: -25%;
-            }
         /* HOME page class styles {ends} */
 
 
@@ -1085,11 +1110,10 @@ mark {
             }
 
             .container_style-three-navbar > div > ul {
+                display: block;
                 background-color: var(--light-color);
-                
+                margin-top: 2rem;
                 width: 40vw;
-                margin-left: -9%;
-                margin-right: -9%;
             }
 
             .container_style-three-navbar > div > ul > li {
@@ -1238,19 +1262,7 @@ mark {
             }
     
             .text-imagery_interface-writing {
-                font-family: var(--heading-font);
                 font-size: 7rem;
-                text-transform: uppercase;
-                line-height: 90%;
-                text-align: center;
-                color: var(--gray-color);
-    
-                margin: 0;
-                margin: auto;
-                width: 100vw;
-    
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: var(--dark-color);
             }    
     
         /* DECORATIVE FEATURES class styles {ends} */
