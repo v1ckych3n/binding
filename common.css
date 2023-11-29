@@ -319,7 +319,7 @@ mark {
 
         .intro_colophon {
             margin-top: 10%;
-            margin-bottom: 15vh;
+            margin-bottom: 20vh;
         }
     /* HOME page class styles {ends} */
 
@@ -790,32 +790,50 @@ mark {
 
     /* class styles TABLET {starts} */
         /* HOME page class styles {starts} */
+            .imagery_intro-landing {
+                flex-direction: row;
+                height: 70vh;
+            }
+
             .imagery_intro-landing > div {
-                height: 20vh;
+                height: 100%;
+                border-bottom: none;
             }
 
             .imagery_intro-landing > div > p {
-                font-size: 40rem;
+                width: 33.33vw;
+                height: 100%;
+                font-size: 50rem;
+
+                top: -70%;
             }
 
-            .imagery_intro-landing > div:first-of-type > p, .imagery_intro-landing > div:last-of-type > p {
-                left: -5rem;
-            }
-    
-            .imagery_intro-landing > div:nth-of-type(2) > p {
-                left: 20rem;
-            }
-
-            .intro_colophon {
-                margin-top: 20%;
-                margin-bottom: 20vh;
+            .imagery_intro-landing > div:first-of-type > p, .imagery_intro-landing > div:nth-of-type(2) > p, .imagery_intro-landing > div:last-of-type > p {
+                left: -10rem;
             }
         /* HOME page class styles {ends} */
 
 
         /* NAVIGATION BAR styles {starts} */
+            .navbar {
+                transform: none;
+                width: 100vw;
+
+                writing-mode: horizontal-tb;
+            }
+
+            .navbar > ul {
+                width: 100%;
+            }
+
+            .navbar.home > ul {
+                width: 100%;
+            }
+
             .navbar > ul > li {
-                height: 100%;
+                height: 15vh;
+                margin: 0;
+                padding-left: 1rem;
             }
         /* NAVIGATION BAR styles {ends} */
         
@@ -965,111 +983,28 @@ mark {
         main {
             padding-top: 10rem;
         }
-
-
-        /* FOOTER styles {starts} */
-            footer {
-                display: flex;
-                flex-direction: row;
-                background-color: var(--light-color);
-                color: var(--dark-color);
-
-                font-family: var(--heading-font);
-                font-size: var(--navbar-font-size);
-                text-transform: uppercase;
-                
-                margin: 0;
-            }
-
-            footer > ul { 
-                margin: 0;
-            }
-
-            footer > ul > li {
-                padding-top: 1.5rem;
-                padding-bottom: 1rem;
-                padding-right: 1.5rem;
-                padding-left: 1.5rem;
-                width: 100vw;
-
-                margin: 0;
-                border: var(--border-style);
-            }
-
-            footer > ul > li:hover {
-                background-color: var(--accent-color);
-                transition: ease-in-out 0.3s;
-
-                color: var(--dark-color);
-            }
-
-            footer > ul > li > a {
-                text-decoration: none;
-                color: var(--dark-color);
-            }
-
-            footer > ul > li > a > span:nth-of-type(1) {
-                padding-left: 2rem;
-            }
-
-            footer > ul > li > a > span:nth-of-type(2) {
-                display: inline;
-                padding: 1rem 1.5rem;
-            }
-
-            footer > ul > li > a:hover {
-                color: var(--dark-color);
-            }
-        /* FOOTER styles {ends} */
     /* SEMANTIC DOM styles {ends} */
 
 
 
     /* class styles {starts} */
         /* HOME page class styles {starts} */
-            .imagery_intro-landing {
-                flex-direction: row;
-                height: 70vh;
-            }
-
-            .imagery_intro-landing > div {
-                height: 100%;
-                border-bottom: none;
-            }
-
             .imagery_intro-landing > div > p {
-                width: 33.33vw;
-                height: 100%;
                 font-size: 60rem;
 
                 top: -120%;
             }
 
-            .imagery_intro-landing > div:first-of-type > p, .imagery_intro-landing > div:nth-of-type(2) > p, .imagery_intro-landing > div:last-of-type > p {
-                left: -10rem;
+            .intro_colophon {
+                margin-top: -20%;
+                margin-bottom: 25vh;
             }
         /* HOME page class styles {ends} */
 
 
         /* NAVIGATION BAR styles {starts} */
-            .navbar {
-                transform: none;
-                width: 100vw;
-
-                writing-mode: horizontal-tb;
-            }
-
-            .navbar > ul {
-                width: 100%;
-            }
-
-            .navbar.home > ul {
-                width: 100%;
-            }
-
             .navbar > ul > li {
                 height: 25%;
-                margin: 0;
             }
 
             /* NAVIGATION BAR (FIXED) class styles {starts} */
@@ -1116,6 +1051,7 @@ mark {
             }
         /* LANDING PAGE class styles {ends} */
 
+        
         /* CONTAINER STYLE ONE class styles {starts} */
             .container_style-one {
                 margin-top: var(--container-margin-top);
