@@ -35,11 +35,6 @@
     font-weight: 600;
 }
 
-@font-face {
-    font-family: Chomsky;
-    src: url(fonts/Chomsky.otf);
-}
-
 
 /* MOBILE MOBILE MOBILE !!! */
 /* MOBILE MOBILE MOBILE !!! */
@@ -320,6 +315,19 @@ mark {
         .intro_colophon {
             margin-top: 10%;
             margin-bottom: 20vh;
+        }
+
+        .colophon-sticky {
+            background: var(--post-it-color);
+            color: var(--dark-color);
+
+            padding: 1rem;
+            margin: 0;
+
+            width: 100vw;
+            height: 23rem;
+
+            border-bottom: var(--border-style);
         }
     /* HOME page class styles {ends} */
 
