@@ -71,9 +71,9 @@
     --h2-line-height: 100%;
 
     /* h3 styles */
-    --h3-font-size: 1.5rem;
+    --h3-font-size: 1.75rem;
     --h3-line-height: 100%;
-    --h3-margin-top: 2rem;
+    --h3-margin-top: 4rem;
     --h3-margin-bottom: 2rem;
 
     /* paragraph styles */
@@ -113,8 +113,7 @@ body {
     background-color: var(--dark-color);
     color: var(--light-color);
 
-    margin-bottom: 15vh;
-    padding-bottom: var(--main-padding);
+    margin-bottom: 12vh;
 }
 
 h1 {
@@ -141,7 +140,6 @@ h3 {
     font-family: var(--heading-font);
     font-size: var(--h3-font-size);
     line-height: var(--h3-line-height);
-    margin-left: 5%;
     text-transform: uppercase;
     margin-top: var(--h3-margin-top);
     margin-bottom: var(--h3-margin-bottom);
@@ -551,8 +549,6 @@ mark {
 
         .container_style-three-navbar {
             color: var(--dark-color);
-            position: sticky;
-            top: 10px;
         }
 
         .container_style-three-navbar > h2 {
@@ -560,36 +556,9 @@ mark {
         }
 
         .container_style-three-navbar > div > ul {
-            background-color: var(--light-color);
-            
-            width: 40vw;
-            margin-left: -9%;
-            margin-right: -9%;
+            display: none;
         }
 
-        .container_style-three-navbar > div > ul > li {
-            font-size: 2rem;
-            font-family: var(--heading-font);
-            text-transform: uppercase;
-            margin: 0;
-
-            border-bottom: var(--border-style);
-            border-left: var(--border-style);
-
-            padding: 1rem 2rem;
-        }
-
-        .container_style-three-navbar > div > ul > li > a {
-            color: var(--dark-color);
-            text-decoration: none;
-            text-decoration-color: white;
-            text-decoration-thickness: 0px;
-        }
-
-        .container_style-three-navbar > div > ul > li:hover {
-            background-color: var(--accent-color);
-            transition: ease-in-out 0.3s;
-        }
     /* CONTAINER STYLE THREE class styles {ends} */
 
 
@@ -768,7 +737,7 @@ mark {
 
         --h3-font-size: 3rem;
         --h3-line-height: 100%;
-        --h3-margin-top: 3rem;
+        --h3-margin-top: 5rem;
         --h3-margin-bottom: 3rem;
 
         --p-font-size: 1rem;
@@ -783,8 +752,8 @@ mark {
         --special-background-character_font-size: 75rem;
 
         --blockquote-font-size: 2rem;
-        --blockquote-margin-top: 5rem;
-        --blockquote-margin-bottom: 5rem;
+        --blockquote-margin-top: 4rem;
+        --blockquote-margin-bottom: 4rem;
 
         /* other styles */
         --border-style: black 1.5px solid;
@@ -859,7 +828,7 @@ mark {
 
         blockquote {
             margin-top: var(--blockquote-margin-top);
-            margin-bottom: var(--blockquoute-margin-bottom);
+            margin-bottom: var(--blockquote-margin-bottom);
         }
 
 
@@ -1261,30 +1230,30 @@ mark {
             .imagery_gap {
                 word-spacing: 15rem;
             }
+
+            .ul-li_normal {
+                width: 30vw;
+                margin: auto;
+                margin-bottom: var(--ul-margin-bottom);
+            }
+    
+            .text-imagery_interface-writing {
+                font-family: var(--heading-font);
+                font-size: 7rem;
+                text-transform: uppercase;
+                line-height: 90%;
+                text-align: center;
+                color: var(--gray-color);
+    
+                margin: 0;
+                margin: auto;
+                width: 100vw;
+    
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--dark-color);
+            }    
     
         /* DECORATIVE FEATURES class styles {ends} */
-
-        .ul-li_normal {
-            width: 30vw;
-            margin: auto;
-            margin-bottom: var(--ul-margin-bottom);
-        }
-
-        .text-imagery_interface-writing {
-            font-family: var(--heading-font);
-            font-size: 7rem;
-            text-transform: uppercase;
-            line-height: 90%;
-            text-align: center;
-            color: var(--gray-color);
-
-            margin: 0;
-            margin: auto;
-            width: 100vw;
-
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: var(--dark-color);
-        }
     /* class styles {ends} */
     
 }
