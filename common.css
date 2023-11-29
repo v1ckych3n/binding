@@ -814,7 +814,7 @@ mark {
         
         /* LANDING SECTION class styles {starts} */
             .landing-page_container > header > p:first-of-type {
-                margin: 0;
+                margin-left: var(--main-padding);
             }
         /* LANDING SECTION class styles {ends} */
 
