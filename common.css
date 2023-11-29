@@ -67,7 +67,7 @@
     --h1-line-height: 100%;
 
     /* h2 styles */
-    --h2-font-size: 3rem;
+    --h2-font-size: 2.5rem;
     --h2-line-height: 100%;
 
     /* h3 styles */
@@ -483,30 +483,28 @@ mark {
     
     /* CONTAINER STYLE ONE class styles {starts} */
         .container_style-one {
-            position: relative;
-
             width: 100%;
+            border-top: var(--border-style);
+            border-bottom: var(--border-style);
         }
 
         .container_style-one > header {
             background: var(--gray-color);
             padding-top: 1rem;
             padding-bottom: 1rem;
-            border-top: var(--border-style);
-            border-bottom: var(--border-style);
             height: 100%;
-        }
+            border-bottom: var(--border-style);
 
-        .container_style-one > header > h2 {
             position: sticky;
             top: 0;
             bottom: 0;
         }
 
-        .container_style-one > section {
-            /* background-color: var(--light-color); */
-            border-bottom: var(--border-style);
+        .container_style-one > header > h2 {
+            position: sticky;
+            top: 0;
         }
+
     /* CONTAINER STYLE ONE class styles {ends} */
 
 
@@ -862,38 +860,25 @@ mark {
 
         /* CONTAINER STYLE ONE class styles {starts} */
             .container_style-one {
-                position: relative;
-                top: 0;
-
                 margin-top: var(--container-margin-top);
-                height: 100vh;
 
-                width: 100%;
                 display: flex;
                 flex-direction: row;
                 align-self: flex-start;
             }
 
             .container_style-one > header {
-                background: var(--gray-color);
                 width: 40vw;
-                height: 100%;
-                padding: 3%;
-                border-top: var(--border-style);
-                border-bottom: var(--border-style);
+                height: 100vh;
                 border-right: var(--border-style);
             }
 
             .container_style-one > header > h2 {
-                position: sticky;
                 top: 2rem;
             }
 
             .container_style-one > section {
-                background-color: var(--light-color);
                 width: 60vw;
-                position: relative;
-                border-top: var(--border-style);
                 border-bottom: var(--border-style);
             }
         /*CONTAINER STYLE ONE class styles {ends} */
