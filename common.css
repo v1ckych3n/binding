@@ -316,6 +316,11 @@ mark {
         .imagery_intro-landing > div:nth-of-type(2) > p {
             left: 5rem;
         }
+
+        .intro_colophon {
+            margin-top: 10%;
+            margin-bottom: 15vh;
+        }
     /* HOME page class styles {ends} */
 
 
@@ -753,8 +758,87 @@ mark {
 
         --h2-font-size: 3.5rem;
 
+        --h3-font-size: 2.25rem;
+
+        --p-margin-top: 2.5rem;
+        --p-margin-bottom: 2.5rem;
+
         --blockquote-font-size: 2rem;
+
+        --navbar-font-size: 4.5rem;
     }
+
+    p {
+        margin: auto;
+        margin-top: var(--p-margin-top);
+        margin-bottom: var(--p-margin-bottom);
+        padding-right: 0;
+        padding-left: 0;
+        width: 70vw;
+    }
+
+    blockquote {
+        width: 60vw;
+    }
+
+    /* class styles TABLET {starts} */
+        /* HOME page class styles {starts} */
+            .imagery_intro-landing > div {
+                height: 20vh;
+            }
+
+            .imagery_intro-landing > div > p {
+                font-size: 40rem;
+            }
+
+            .imagery_intro-landing > div:first-of-type > p, .imagery_intro-landing > div:last-of-type > p {
+                left: -5rem;
+            }
+    
+            .imagery_intro-landing > div:nth-of-type(2) > p {
+                left: 20rem;
+            }
+
+            .intro_colophon {
+                margin-top: 20%;
+                margin-bottom: 20vh;
+            }
+        /* HOME page class styles {ends} */
+
+
+        /* NAVIGATION BAR styles {starts} */
+            .navbar > ul > li {
+                height: 100%;
+            }
+        /* NAVIGATION BAR styles {ends} */
+
+
+        /* DECORATIVE FEATURES class styles {starts} */
+            .ul-li_normal {
+                width: 55vw;
+            }
+
+            .circle-container {
+                font-size: xx-large;
+            }
+
+            .circle-container > li {
+                width: 350px;
+                height: 350px;
+            }
+
+            .circle-container_content-style-three {
+                font-size: xx-large;
+            }
+
+            .circle-container_content-style-three > li {
+                width: 250px;
+                height: 250px;
+            }
+        /* DECORATIVE FEATURES class styles {ends} */
+
+    /* class styles TABLET {ends} */
+
 }
 
 
@@ -804,11 +888,6 @@ mark {
     }
 
     p {
-        margin: auto;
-        margin-top: var(--p-margin-top);
-        margin-bottom: var(--p-margin-bottom);
-        padding-left: 0;
-        padding-right: 0;
         width: 37vw;
     }
 
@@ -816,6 +895,9 @@ mark {
         width: 47vw;
         text-align: center;
         margin: auto;
+
+        margin-top: var(--blockquote-margin-top);
+        margin-bottom: var(--blockquote-margin-bottom);
     }
 
     /* Semantic DOM styles */
@@ -859,11 +941,6 @@ mark {
 
         main {
             padding-top: 10rem;
-        }
-
-        blockquote {
-            margin-top: var(--blockquote-margin-top);
-            margin-bottom: var(--blockquote-margin-bottom);
         }
 
 
@@ -1255,7 +1332,7 @@ mark {
                     color: var(--dark-color);
                     font-weight: 800;
                 }
-            /* circle contaomer {ends} */
+            /* circle container {ends} */
 
             .imagery_gap {
                 word-spacing: 15rem;
