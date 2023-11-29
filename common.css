@@ -493,12 +493,11 @@ mark {
             padding-top: 1rem;
             padding-bottom: 1rem;
             height: 100%;
+            border-bottom: var(--border-style);
 
             position: sticky;
             top: 0;
             bottom: 0;
-
-            border-bottom: var(--border-style);
         }
 
         .container_style-one > header > h2 {
@@ -538,6 +537,8 @@ mark {
             padding-top: 1rem;
             padding-bottom: 1rem;
             height: 100%;
+
+            border-bottom: var(--border-style);
 
             position: sticky;
             top: 0;
@@ -1082,15 +1083,17 @@ mark {
             }
 
             .container_style-three > header {
-                background: var(--dark-color);
                 width: 40vw;
                 height: 100vh;
         
                 border-left: var(--border-style);
+
+                width: 40vw;
+                height: 100vh;
+                border-right: var(--border-style);
             }
 
             .container_style-three > header > h2 {
-                color: var(--light-color);
                 position: sticky; 
                 top: 10px;
             }
@@ -1098,6 +1101,7 @@ mark {
             .container_style-three > section {
                 background-color: var(--light-color);
                 width: 60vw;
+                position: relative;
                 border-top: var(--border-style);
             }
 
@@ -1257,6 +1261,7 @@ mark {
             .imagery_gap {
                 word-spacing: 15rem;
             }
+    
         /* DECORATIVE FEATURES class styles {ends} */
 
         .ul-li_normal {
