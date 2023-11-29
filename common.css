@@ -514,9 +514,10 @@ mark {
 
         .container_style-two > header { 
             border-bottom: var(--border-style);
+            border-color: white;
             background-color: var(--dark-color);
-            padding-top: var(--main-padding);
-            padding-bottom: var(--main-padding);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
 
             position: sticky;
             top: 0;
@@ -578,7 +579,7 @@ mark {
                 align-items: center;
                 align-content: center;
 
-                margin: 0;
+
                 margin-top: var(--section-margin-top);
                 margin-bottom: var(--section-margin-bottom);
 
@@ -590,14 +591,12 @@ mark {
             .circle-container > li {
                 border-radius: 100%;
                 position: relative;
-            
+                margin: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                /* margin-right: 1rem; */
 
-                border: var(--border-style);
                 width: 150px;
                 height: 150px;
                 background-color: var(--dark-color);
@@ -992,8 +991,15 @@ mark {
                 margin-bottom: var(--container-margin-bottom);
                 background-color: var(--light-color);
 
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
                 position: sticky;
                 top: 0;
+            }
+
+            .container_style-two > header > h2 {
+                color: var(--dark-color);
             }
         /* CONTAINER STYLE TWO class styles {ends} */
 
