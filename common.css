@@ -493,11 +493,12 @@ mark {
             padding-top: 1rem;
             padding-bottom: 1rem;
             height: 100%;
-            border-bottom: var(--border-style);
 
             position: sticky;
             top: 0;
             bottom: 0;
+
+            border-bottom: var(--border-style);
         }
 
         .container_style-one > header > h2 {
@@ -529,7 +530,6 @@ mark {
     /* CONTAINER STYLE THREE class styles {starts} */
         .container_style-three {
             width: 100%;
-            border-top: var(--border-style);
             border-bottom: var(--border-style);
         }
 
@@ -538,8 +538,6 @@ mark {
             padding-top: 1rem;
             padding-bottom: 1rem;
             height: 100%;
-
-            border-bottom: var(--border-style);
 
             position: sticky;
             top: 0;
@@ -711,7 +709,7 @@ mark {
             margin: auto;
             margin-top: var(--ul-margin-top);
             margin-bottom: var(--ul-margin-bottom);
-            width: 90vw;
+            width: 75vw;
 
             list-style:square;
         }
@@ -734,6 +732,13 @@ mark {
 
         .accent-color {
             color: var(--accent-color);
+        }
+
+        .imagery_gap {
+            content:"";
+            word-spacing: 5rem;
+            border: var(--border-style);
+            background-color: var(--accent-color);
         }
     /* DECORATIVE FEATURES class styles {ends} */
 /* class styles MOBILE {ends} */
@@ -1027,6 +1032,7 @@ mark {
                 width: 40vw;
                 height: 100vh;
                 border-right: var(--border-style);
+                border-bottom: none;
             }
 
             .container_style-one > header > h2 {
@@ -1035,7 +1041,6 @@ mark {
 
             .container_style-one > section {
                 width: 60vw;
-                border-bottom: var(--border-style);
             }
         /*CONTAINER STYLE ONE class styles {ends} */
 
@@ -1071,7 +1076,6 @@ mark {
 
                 margin-top: var(--container-margin-top);
 
-                width: 100%;
                 display: flex;
                 flex-direction: row-reverse;
                 align-self: flex-start;
@@ -1080,21 +1084,21 @@ mark {
             .container_style-three > header {
                 background: var(--dark-color);
                 width: 40vw;
-                padding: 3%;
-                border-top: var(--border-style);
-                border-bottom: var(--border-style);
-                border-right: var(--border-style);
+                height: 100vh;
+        
                 border-left: var(--border-style);
-                padding: 3%;
-
-                position: relative;
-                top: 0;
             }
 
             .container_style-three > header > h2 {
                 color: var(--light-color);
                 position: sticky; 
                 top: 10px;
+            }
+
+            .container_style-three > section {
+                background-color: var(--light-color);
+                width: 60vw;
+                border-top: var(--border-style);
             }
 
             .container_style-three-navbar {
@@ -1137,14 +1141,6 @@ mark {
             .container_style-three-navbar > div > ul > li:hover {
                 background-color: var(--accent-color);
                 transition: ease-in-out 0.3s;
-            }
-
-            .container_style-three > section {
-                background-color: var(--light-color);
-                width: 60vw;
-                position: relative;
-                border-top: var(--border-style);
-                border-bottom: var(--border-style);
             }
         /* CONTAINER STYLE THREE class styles {ends} */
 
@@ -1258,15 +1254,10 @@ mark {
                 }
             /* circle contaomer {ends} */
 
+            .imagery_gap {
+                word-spacing: 15rem;
+            }
         /* DECORATIVE FEATURES class styles {ends} */
-
-
-        .imagery_gap {
-            content:"";
-            word-spacing: 15rem;
-            border: var(--border-style);
-            background-color: var(--accent-color);
-        }
 
         .ul-li_normal {
             width: 30vw;
